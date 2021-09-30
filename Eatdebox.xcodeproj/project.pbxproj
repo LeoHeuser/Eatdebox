@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7119F34C26B1D9FA00F96863 /* EatdeboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F34B26B1D9FA00F96863 /* EatdeboxApp.swift */; };
+		7119F34E26B1D9FA00F96863 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F34D26B1D9FA00F96863 /* MapView.swift */; };
+		7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7119F34F26B1D9FC00F96863 /* Assets.xcassets */; };
+		7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7119F35226B1D9FC00F96863 /* Preview Assets.xcassets */; };
+		7119F35F26B1DF8100F96863 /* AddFoodboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F35E26B1DF8100F96863 /* AddFoodboxView.swift */; };
+		7119F36126B1E08800F96863 /* Definitions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7119F36026B1E08800F96863 /* Definitions.rtf */; };
+		7119F36326B1F33800F96863 /* PrimaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36226B1F33800F96863 /* PrimaryButtons.swift */; };
+		7119F36626B2005A00F96863 /* Onboarding1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36526B2005A00F96863 /* Onboarding1View.swift */; };
+		7119F36A26B2056800F96863 /* Onboarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36926B2056800F96863 /* Onboarding2View.swift */; };
+		7119F36C26B20F5600F96863 /* FoodboxDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */; };
+		7119F36F26B2151B00F96863 /* FoodboxMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */; };
+		7119F37226B2181D00F96863 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37126B2181D00F96863 /* CustomHeader.swift */; };
+		7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */; };
+		7119F37626B21F8400F96863 /* CalculateNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37526B21F8400F96863 /* CalculateNavigation.swift */; };
+		7122D45827065DD200C4E26B /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7122D45727065DD200C4E26B /* markers.json */; };
+		7123329A26F50B3300581A34 /* Changelog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7123329926F50B3300581A34 /* Changelog.rtf */; };
+		7123329D26F5120200581A34 /* LondrinaSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* LondrinaSolid.ttf */; };
+		7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */; };
+		717E2F2526B3058F00210163 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E2F2426B3058F00210163 /* AboutView.swift */; };
+		717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F326B32FB400958B58 /* Onboarding3View.swift */; };
+		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
+		71A914B226DFBD39005D0070 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A914B126DFBD39005D0070 /* LoadingView.swift */; };
+		71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB526926D9867B00C850C7 /* LocationManager.swift */; };
+		71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D331DE26EE2FD800209365 /* Foodbox.swift */; };
+		71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7119F34826B1D9FA00F96863 /* Eatdebox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatdebox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7119F34B26B1D9FA00F96863 /* EatdeboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatdeboxApp.swift; sourceTree = "<group>"; };
+		7119F34D26B1D9FA00F96863 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7119F34F26B1D9FC00F96863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7119F35226B1D9FC00F96863 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7119F35426B1D9FC00F96863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7119F35E26B1DF8100F96863 /* AddFoodboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodboxView.swift; sourceTree = "<group>"; };
+		7119F36026B1E08800F96863 /* Definitions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Definitions.rtf; sourceTree = "<group>"; };
+		7119F36226B1F33800F96863 /* PrimaryButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtons.swift; sourceTree = "<group>"; };
+		7119F36526B2005A00F96863 /* Onboarding1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1View.swift; sourceTree = "<group>"; };
+		7119F36926B2056800F96863 /* Onboarding2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding2View.swift; sourceTree = "<group>"; };
+		7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDetailView.swift; sourceTree = "<group>"; };
+		7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxMapMarker.swift; sourceTree = "<group>"; };
+		7119F37126B2181D00F96863 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFoodboxParameter.swift; sourceTree = "<group>"; };
+		7119F37526B21F8400F96863 /* CalculateNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateNavigation.swift; sourceTree = "<group>"; };
+		7122D45727065DD200C4E26B /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = markers.json; sourceTree = "<group>"; };
+		7123329926F50B3300581A34 /* Changelog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Changelog.rtf; sourceTree = "<group>"; };
+		71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Annual Self Classification Report (2021).numbers"; sourceTree = "<group>"; };
+		7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDataProcessor.swift; sourceTree = "<group>"; };
+		717E2F2426B3058F00210163 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		717EB7F126B3147800958B58 /* LondrinaSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LondrinaSolid.ttf; path = Eatdebox/fonts/LondrinaSolid.ttf; sourceTree = SOURCE_ROOT; };
+		717EB7F326B32FB400958B58 /* Onboarding3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
+		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
+		71A914B126DFBD39005D0070 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		71CB526926D9867B00C850C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		71D331DE26EE2FD800209365 /* Foodbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodbox.swift; sourceTree = "<group>"; };
+		71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineDataProcessor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7119F34526B1D9FA00F96863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7119F33F26B1D9F900F96863 = {
+			isa = PBXGroup;
+			children = (
+				7119F34A26B1D9FA00F96863 /* Eatdebox */,
+				7119F34926B1D9FA00F96863 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7119F34926B1D9FA00F96863 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7119F34826B1D9FA00F96863 /* Eatdebox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7119F34A26B1D9FA00F96863 /* Eatdebox */ = {
+			isa = PBXGroup;
+			children = (
+				7119F34B26B1D9FA00F96863 /* EatdeboxApp.swift */,
+				71D331DE26EE2FD800209365 /* Foodbox.swift */,
+				71CB526926D9867B00C850C7 /* LocationManager.swift */,
+				7119F37526B21F8400F96863 /* CalculateNavigation.swift */,
+				7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */,
+				71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */,
+				7119F36D26B214CE00F96863 /* Views */,
+				7119F36426B1FC0500F96863 /* UI Elements */,
+				7119F34F26B1D9FC00F96863 /* Assets.xcassets */,
+				7119F35426B1D9FC00F96863 /* Info.plist */,
+				7122D45727065DD200C4E26B /* markers.json */,
+				717E2F2626B3131E00210163 /* Fonts */,
+				7119F35126B1D9FC00F96863 /* Preview Content */,
+				71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */,
+				7119F36026B1E08800F96863 /* Definitions.rtf */,
+				7123329926F50B3300581A34 /* Changelog.rtf */,
+			);
+			path = Eatdebox;
+			sourceTree = "<group>";
+		};
+		7119F35126B1D9FC00F96863 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7119F35226B1D9FC00F96863 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7119F36426B1FC0500F96863 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				7119F36226B1F33800F96863 /* PrimaryButtons.swift */,
+				717EB7F526B3314200958B58 /* SecondaryButtons.swift */,
+				7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */,
+				7119F37126B2181D00F96863 /* CustomHeader.swift */,
+				7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		7119F36D26B214CE00F96863 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7119F37026B2164B00F96863 /* Onboarding */,
+				7119F34D26B1D9FA00F96863 /* MapView.swift */,
+				7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */,
+				717E2F2426B3058F00210163 /* AboutView.swift */,
+				71A914B126DFBD39005D0070 /* LoadingView.swift */,
+				7119F35E26B1DF8100F96863 /* AddFoodboxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7119F37026B2164B00F96863 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7119F36526B2005A00F96863 /* Onboarding1View.swift */,
+				7119F36926B2056800F96863 /* Onboarding2View.swift */,
+				717EB7F326B32FB400958B58 /* Onboarding3View.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		717E2F2626B3131E00210163 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				717EB7F126B3147800958B58 /* LondrinaSolid.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7119F34726B1D9FA00F96863 /* Eatdebox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7119F35726B1D9FC00F96863 /* Build configuration list for PBXNativeTarget "Eatdebox" */;
+			buildPhases = (
+				7119F34426B1D9FA00F96863 /* Sources */,
+				7119F34526B1D9FA00F96863 /* Frameworks */,
+				7119F34626B1D9FA00F96863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eatdebox;
+			productName = Eatdebox;
+			productReference = 7119F34826B1D9FA00F96863 /* Eatdebox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7119F34026B1D9F900F96863 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7119F34726B1D9FA00F96863 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 7119F34326B1D9F900F96863 /* Build configuration list for PBXProject "Eatdebox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7119F33F26B1D9F900F96863;
+			productRefGroup = 7119F34926B1D9FA00F96863 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7119F34726B1D9FA00F96863 /* Eatdebox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7119F34626B1D9FA00F96863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7123329D26F5120200581A34 /* LondrinaSolid.ttf in Resources */,
+				7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */,
+				7119F36126B1E08800F96863 /* Definitions.rtf in Resources */,
+				7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */,
+				7122D45827065DD200C4E26B /* markers.json in Resources */,
+				7123329A26F50B3300581A34 /* Changelog.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7119F34426B1D9FA00F96863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */,
+				7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */,
+				717E2F2526B3058F00210163 /* AboutView.swift in Sources */,
+				7119F34E26B1D9FA00F96863 /* MapView.swift in Sources */,
+				7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */,
+				7119F34C26B1D9FA00F96863 /* EatdeboxApp.swift in Sources */,
+				7119F36F26B2151B00F96863 /* FoodboxMapMarker.swift in Sources */,
+				7119F36626B2005A00F96863 /* Onboarding1View.swift in Sources */,
+				7119F37626B21F8400F96863 /* CalculateNavigation.swift in Sources */,
+				7119F36A26B2056800F96863 /* Onboarding2View.swift in Sources */,
+				717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */,
+				7119F36326B1F33800F96863 /* PrimaryButtons.swift in Sources */,
+				7119F36C26B20F5600F96863 /* FoodboxDetailView.swift in Sources */,
+				71A914B226DFBD39005D0070 /* LoadingView.swift in Sources */,
+				717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */,
+				7119F35F26B1DF8100F96863 /* AddFoodboxView.swift in Sources */,
+				71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */,
+				71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */,
+				7119F37226B2181D00F96863 /* CustomHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7119F35526B1D9FC00F96863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7119F35626B1D9FC00F96863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7119F35826B1D9FC00F96863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
+				DEVELOPMENT_TEAM = 8C7WM5V4Q4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Eatdebox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.heuser.Eatdebox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7119F35926B1D9FC00F96863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
+				DEVELOPMENT_TEAM = 8C7WM5V4Q4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Eatdebox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.heuser.Eatdebox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7119F34326B1D9F900F96863 /* Build configuration list for PBXProject "Eatdebox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7119F35526B1D9FC00F96863 /* Debug */,
+				7119F35626B1D9FC00F96863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7119F35726B1D9FC00F96863 /* Build configuration list for PBXNativeTarget "Eatdebox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7119F35826B1D9FC00F96863 /* Debug */,
+				7119F35926B1D9FC00F96863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7119F34026B1D9F900F96863 /* Project object */;
+}
