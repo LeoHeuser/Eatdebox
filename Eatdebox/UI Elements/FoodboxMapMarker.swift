@@ -18,7 +18,7 @@ struct FoodboxMapMarker: View {
                 .shadow(color: Color(.tertiaryLabel), radius: 4, x: 0, y: 2)
             Circle()
                 .padding(5)
-                .foregroundColor(Color("edb_green"))
+                .foregroundColor(Color("edb_red"))
             Image(systemName: "leaf")
                 .foregroundColor(Color(.systemBackground))
         }

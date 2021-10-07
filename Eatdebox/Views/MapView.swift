@@ -20,7 +20,8 @@ struct MapView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: foodboxData) { foodbox in
+                Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: foodboxData)
+                { foodbox in
                     MapAnnotation(coordinate: foodbox.coordinate) {
                         Button {
                             self.foodboxItem = foodbox
@@ -33,6 +34,7 @@ struct MapView: View {
                         }
                     }
                 }
+                .accentColor(Color("edb_green"))
                 .sheet(item: $foodboxItem) { foodboxItem in
                     FoodboxDetailView(foodbox_id: foodboxItem.id,
                                       foodbox_latitude: foodboxItem.lat,
