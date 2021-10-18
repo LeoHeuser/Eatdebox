@@ -1,0 +1,101 @@
+/* (No Comment) */
+"foodbox" = "Foodbox ";
+
+/* (No Comment) */
+"eatdebox_appName" = "Eatdebox";
+
+/* (No Comment) */
+"label_loading" = "Loading data...";
+
+/* (No Comment) */
+"madeWithLove" = "Made with ❤️ to fight against food waste";
+
+/* (No Comment) */
+"button_close" = "Close";
+
+/* (No Comment) */
+"button_next" = "Next";
+
+/* (No Comment) */
+"button_locationPermission" = "Ask me";
+
+/* (No Comment) */
+"button_finish" = "Finish";
+
+/* (No Comment) */
+"button_foodsharingRulesAndTips" = "Rules and tips for sharing food";
+
+/* (No Comment) */
+"button_navigationToFoodbox" = "Navigate me to this Foodbox";
+
+/* (No Comment) */
+"button_downloadFoodboxes" = "Download latest Foodboxes";
+
+/* (No Comment) */
+"button_toFoodsharingWebsite" = "Foodsharing e.V. Website";
+
+/* (No Comment) */
+"button_legals" = "Legal Stuff";
+
+/* (No Comment) */
+"button_imprint" = "Imprint";
+
+/* (No Comment) */
+"button_dataPrivacy" = "Data Privacy";
+
+/* (No Comment) */
+"onboaring1_header" = "This is Eatdebox.";
+
+/* (No Comment) */
+"onboaring1_text" = "Find free food in your area to save it from the trash and save money. Foodboxes where you can share your food with others and take it if you need it.";
+
+/* (No Comment) */
+"onboaring2_header" = "Find the Foodboxes next to you.";
+
+/* (No Comment) */
+"onboaring2_text" = "Eatdebox wants to use the location of your iPhone while you use the app. Your location helps to show Foodboxes around you.";
+
+/* (No Comment) */
+"onboaring3_header" = "Houston, we have no problem.";
+
+/* (No Comment) */
+"onboaring3_text" = "The Foodboxe’s data is handpicked and embedded into the app. Therefore, you may not have all the Foodboxes on your radar right away. But we are working on it.";
+
+/* (No Comment) */
+"onboaring3_footnote" = "In a later update, the data will also be available in real time from the Foodsharing e.V. API. Look forward to it.";
+
+/* (No Comment) */
+"foodbox_id" = "Foodbox ID";
+
+/* (No Comment) */
+"foodbox_address" = "Address";
+
+/* (No Comment) */
+"foodbox_hostingType" = "Hosting type";
+
+/* (No Comment) */
+"foodbox_lastActivity" = "Last activity";
+
+/* (No Comment) */
+"foodbox_header_description" = "Description";
+
+/* (No Comment) */
+"label_about" = "About";
+
+/* (No Comment) */
+"label_appVersion" = "App Version";
+
+/* (No Comment) */
+"label_datasetVersion" = "Dataset Version";
+
+/* (No Comment) */
+"becomeActive_header" = "Become active and help";
+
+/* (No Comment) */
+"becomeActive_footer" = "The project Eatdebox has nothing to do with the Foodsharing e.V. in the German-speaking area. We only aim at a similar goal.";
+
+/* (No Comment) */
+"alert_title" = "We are still in beta, guys";
+
+/* (No Comment) */
+"alert_text" = "Currently, this function is still under development. Come back later.";

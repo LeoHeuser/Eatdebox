@@ -11,31 +11,39 @@ struct AboutView: View {
     
     // Parameter
     @State private var showingSheet = false
+    @State private var showingMissingFeatureAlert = false
+    
     let appVersionVariable = (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String)!
     
     // Functions
     var body: some View {
         Form {
-            StaticFoodboxParameter(parameter: "App Version", value: appVersionVariable)
-            StaticFoodboxParameter(parameter: "Dataset Version", value: "October 2021 (\(loadOfflineJSON().count) Foodboxes)")
+            StaticFoodboxParameter(parameter: NSLocalizedString("label_appVersion", comment: ""), value: appVersionVariable)
+            StaticFoodboxParameter(parameter: NSLocalizedString("label_datasetVersion", comment: ""), value: "October 2021 (\(loadOfflineJSON().count) Foodboxes)")
             Button {
                 print("Download button pressed...")
+                showingMissingFeatureAlert = true
             } label: {
-                Text("Download latest Foodboxes")
+                Text(NSLocalizedString("button_downloadFoodboxes", comment: ""))
             }
+            .alert(isPresented: $showingMissingFeatureAlert) {
+                        Alert(title: Text(NSLocalizedString("alert_title", comment: "")), message: Text(NSLocalizedString("alert_text", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
+                    }
             
-            Section(header: Text("Become active and help"), footer: Text("The project Eatdebox has nothing to do with the Foodsharing e.V. in the German-speaking area. We only aim at a similar goal.")) {
-                Link("Rules and tips for sharing food", destination: URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
-                Link("Foodsharing e.V. Website", destination: URL(string: "https://foodsharing.de")!)
+            
+            Section(header: Text(NSLocalizedString("becomeActive_header", comment: "")), footer: Text(NSLocalizedString("becomeActive_footer", comment: ""))) {
+                Link(NSLocalizedString("button_foodsharingRulesAndTips", comment: ""), destination: URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
+                Link(NSLocalizedString("button_toFoodsharingWebsite", comment: ""), destination: URL(string: "https://foodsharing.de")!)
             }
-            Section(header: Text("Legal Stuff")) {
-                Link("Imprint", destination: URL(string: "https://eatdebox.eu/imprint/")!)
-                Link("Data Privacy", destination: URL(string: "https://eatdebox.eu/data-privacy/")!)
+            Section(header: Text(NSLocalizedString("button_legals", comment: ""))) {
+                Link(NSLocalizedString("button_imprint", comment: ""), destination: URL(string: "https://eatdebox.eu/imprint/")!)
+                Link(NSLocalizedString("button_dataPrivacy", comment: ""), destination: URL(string: "https://eatdebox.eu/data-privacy/")!)
             }
         }
-        Text("Made with ❤️ to fight against food waste")
+        Text(NSLocalizedString("madeWithLove", comment: ""))
+            .multilineTextAlignment(.center)
             .padding(.bottom)
-            .navigationBarTitle("About")
+            .navigationBarTitle(NSLocalizedString("label_about", comment: ""))
     }
 }
 

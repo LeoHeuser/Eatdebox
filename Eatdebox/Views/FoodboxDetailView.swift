@@ -24,34 +24,36 @@ struct FoodboxDetailView: View {
     @State private var foodbox_kind_hosting:String?
     @State private var foodbox_description:String?
     
-    @State private var foodboxAddress:String = "Loading address...\n\n" // Combination of multiple parameters here
+    @State private var foodboxAddress:String = NSLocalizedString("label_loading", comment: "") // Combination of multiple parameters here
     
     // View
     var body: some View {
         NavigationView {
             List {
                 Section(header: Text("")) {
-                    StaticFoodboxParameter(parameter: "Foodbox ID", value: "\(foodbox_id)")
+                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_id", comment: ""), value: "\(foodbox_id)")
                     
-                    StaticFoodboxParameter(parameter: "Address", value: foodboxAddress)
+                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_address", comment: ""), value: foodboxAddress)
                     
-                    StaticFoodboxParameter(parameter: "Hosting type", value: "\(foodbox_kind_hosting ?? "Loading data...")")
+                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_hostingType", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_loading", comment: ""))")
                     
-                    StaticFoodboxParameter(parameter: "Last activity", value: "\(foodbox_kind_hosting ?? "Loading data...")")
+                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_loading", comment: ""))")
                 }
                 
-                Section(header: Text("Description")) {
-                    Text(foodbox_description ?? "Loading data...")
+                Section(header: Text(NSLocalizedString("foodbox_header_description", comment: ""))) {
+                    Text(foodbox_description ?? NSLocalizedString("label_loading", comment: ""))
                     
                     Button {
                         UIApplication.shared.open(URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
                     } label: {
-                        Text("Rules and tips for sharing food")
+                        Text(NSLocalizedString("button_foodsharingRulesAndTips", comment: ""))
                     }
                 }
                 
             }
-            .navigationBarTitle("Foodbox \(foodbox_streetname ?? String(foodbox_id))", displayMode: .inline)
+            //.navigationBarTitle("Foodbox \(foodbox_streetname ?? String(foodbox_id))", displayMode: .inline)
+            .navigationBarTitle(NSLocalizedString("foodbox", comment: "") + (foodbox_streetname ?? String(foodbox_id)), displayMode: .inline)
+            
             .navigationBarItems(trailing:
                                     Button {
                                                 UIApplication.shared.open(URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)")!)
@@ -65,7 +67,7 @@ struct FoodboxDetailView: View {
         Button {
             getNavigationTo(latitude: "\(foodbox_latitude)", longitude: "\(foodbox_longitude)")
         } label: {
-            SecondaryTextButton(buttonText: "Navigate me to this Foodbox")
+            SecondaryTextButton(buttonText: NSLocalizedString("button_navigationToFoodbox", comment: ""))
         }
         .onAppear(){
             calculateAddressfromLatAndLong()

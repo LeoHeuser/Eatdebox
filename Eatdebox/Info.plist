@@ -23,7 +23,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Eatdebox would like to access your current location only while you using the app for show in the map.</string>
+	<string>Eatdebox wants to access your current location while you use the app to show you Foodboxes in your area on the map.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>LondrinaSolid.ttf</string>

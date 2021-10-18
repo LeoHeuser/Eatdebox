@@ -23,18 +23,18 @@ struct Onboarding3View: View {
             
             Spacer()
             
-            Text("Houston, we have no problem.")
+            Text(NSLocalizedString("onboaring3_header", comment: ""))
                 .font(.headline)
                 .multilineTextAlignment(.center)
                 .padding(.bottom)
             
-            Text("The Foodboxe’s data is handpicked and embedded into the app. Therefore, you may not have all the Foodboxes on your radar right away. But we are working on it.")
+            Text(NSLocalizedString("onboaring3_text", comment: ""))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
             
             Spacer()
             
-            Text("In a later update, the data will also be available in real time from the Foodsharing e.V. API. Look forward to it.")
+            Text(NSLocalizedString("onboaring3_footnote", comment: ""))
                 .font(.footnote)
                 .foregroundColor(Color("edb_darkGrey"))
                 .multilineTextAlignment(.center)
@@ -42,7 +42,7 @@ struct Onboarding3View: View {
             NavigationLink(
                 destination: MapView(),
                 label: {
-                    PrimaryTextButton(buttonText: "Finish")
+                    PrimaryTextButton(buttonText: NSLocalizedString("button_finish", comment: ""))
                 }).padding(.bottom)
         }
         .navigationBarHidden(true)

@@ -21,12 +21,12 @@ struct Onboarding1View: View {
                 
                 Spacer()
                 
-                Text("This is Eatdebox.")
+                Text(NSLocalizedString("onboaring1_header", comment: ""))
                     .font(.headline)
                     .multilineTextAlignment(.center)
                     .padding(.bottom)
                 
-                Text("Find free food in your area to save it from the trash and save money. Foodboxes where you can share your food with others and take it if you need it.")
+                Text(NSLocalizedString("onboaring1_text", comment: ""))
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                 
@@ -35,7 +35,7 @@ struct Onboarding1View: View {
                 NavigationLink(
                     destination: Onboarding2View(),
                     label: {
-                        PrimaryTextButton(buttonText: "Next")
+                        PrimaryTextButton(buttonText: NSLocalizedString("button_next", comment: ""))
                     }).padding(.bottom)
             }
         }

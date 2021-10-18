@@ -55,7 +55,7 @@ struct MapView: View {
                 }
                 .padding(.bottom)
             }
-            .navigationBarTitle("Eatdebox")
+            .navigationBarTitle(NSLocalizedString("eatdebox_appName", comment: ""))
             .navigationBarItems(trailing:
                                     NavigationLink(
                                         destination: AboutView(),

@@ -11,7 +11,6 @@
 		7119F34E26B1D9FA00F96863 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F34D26B1D9FA00F96863 /* MapView.swift */; };
 		7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7119F34F26B1D9FC00F96863 /* Assets.xcassets */; };
 		7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7119F35226B1D9FC00F96863 /* Preview Assets.xcassets */; };
-		7119F35F26B1DF8100F96863 /* AddFoodboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F35E26B1DF8100F96863 /* AddFoodboxView.swift */; };
 		7119F36126B1E08800F96863 /* Definitions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7119F36026B1E08800F96863 /* Definitions.rtf */; };
 		7119F36326B1F33800F96863 /* PrimaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36226B1F33800F96863 /* PrimaryButtons.swift */; };
 		7119F36626B2005A00F96863 /* Onboarding1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36526B2005A00F96863 /* Onboarding1View.swift */; };
@@ -22,12 +21,13 @@
 		7119F37626B21F8400F96863 /* CalculateNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37526B21F8400F96863 /* CalculateNavigation.swift */; };
 		7123329A26F50B3300581A34 /* Changelog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7123329926F50B3300581A34 /* Changelog.rtf */; };
 		7123329D26F5120200581A34 /* LondrinaSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* LondrinaSolid.ttf */; };
-		71362B75271D76FD000E3FBE /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 71362B74271D76FD000E3FBE /* markers.json */; };
+		712FB395271DAE0D0002CA63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 712FB393271DAE0D0002CA63 /* InfoPlist.strings */; };
 		7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */; };
+		71606EF0271D9025002837D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71606EF2271D9025002837D3 /* Localizable.strings */; };
+		71606EF5271DA428002837D3 /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 71606EF4271DA428002837D3 /* markers.json */; };
 		717E2F2526B3058F00210163 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E2F2426B3058F00210163 /* AboutView.swift */; };
 		717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F326B32FB400958B58 /* Onboarding3View.swift */; };
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
-		71A914B226DFBD39005D0070 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A914B126DFBD39005D0070 /* LoadingView.swift */; };
 		71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB526926D9867B00C850C7 /* LocationManager.swift */; };
 		71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D331DE26EE2FD800209365 /* Foodbox.swift */; };
 		71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */; };
@@ -40,7 +40,6 @@
 		7119F34F26B1D9FC00F96863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7119F35226B1D9FC00F96863 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7119F35426B1D9FC00F96863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7119F35E26B1DF8100F96863 /* AddFoodboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodboxView.swift; sourceTree = "<group>"; };
 		7119F36026B1E08800F96863 /* Definitions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Definitions.rtf; sourceTree = "<group>"; };
 		7119F36226B1F33800F96863 /* PrimaryButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtons.swift; sourceTree = "<group>"; };
 		7119F36526B2005A00F96863 /* Onboarding1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1View.swift; sourceTree = "<group>"; };
@@ -50,14 +49,16 @@
 		7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFoodboxParameter.swift; sourceTree = "<group>"; };
 		7119F37526B21F8400F96863 /* CalculateNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateNavigation.swift; sourceTree = "<group>"; };
 		7123329926F50B3300581A34 /* Changelog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Changelog.rtf; sourceTree = "<group>"; };
-		71362B74271D76FD000E3FBE /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = markers.json; path = ../../../Desktop/markers.json; sourceTree = "<group>"; };
+		712FB394271DAE0D0002CA63 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Annual Self Classification Report (2021).numbers"; sourceTree = "<group>"; };
 		7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDataProcessor.swift; sourceTree = "<group>"; };
+		71606EF1271D9025002837D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		71606EF3271D9063002837D3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		71606EF4271DA428002837D3 /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = markers.json; sourceTree = "<group>"; };
 		717E2F2426B3058F00210163 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		717EB7F126B3147800958B58 /* LondrinaSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LondrinaSolid.ttf; path = Eatdebox/fonts/LondrinaSolid.ttf; sourceTree = SOURCE_ROOT; };
 		717EB7F326B32FB400958B58 /* Onboarding3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
-		71A914B126DFBD39005D0070 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		71CB526926D9867B00C850C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		71D331DE26EE2FD800209365 /* Foodbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodbox.swift; sourceTree = "<group>"; };
 		71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineDataProcessor.swift; sourceTree = "<group>"; };
@@ -103,12 +104,13 @@
 				7119F36426B1FC0500F96863 /* UI Elements */,
 				7119F34F26B1D9FC00F96863 /* Assets.xcassets */,
 				7119F35426B1D9FC00F96863 /* Info.plist */,
-				71362B74271D76FD000E3FBE /* markers.json */,
 				717E2F2626B3131E00210163 /* Fonts */,
 				7119F35126B1D9FC00F96863 /* Preview Content */,
 				71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */,
+				71606EF4271DA428002837D3 /* markers.json */,
 				7119F36026B1E08800F96863 /* Definitions.rtf */,
 				7123329926F50B3300581A34 /* Changelog.rtf */,
+				712FB396271DAED80002CA63 /* Localisation */,
 			);
 			path = Eatdebox;
 			sourceTree = "<group>";
@@ -139,8 +141,6 @@
 				7119F34D26B1D9FA00F96863 /* MapView.swift */,
 				7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */,
 				717E2F2426B3058F00210163 /* AboutView.swift */,
-				71A914B126DFBD39005D0070 /* LoadingView.swift */,
-				7119F35E26B1DF8100F96863 /* AddFoodboxView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +153,15 @@
 				717EB7F326B32FB400958B58 /* Onboarding3View.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		712FB396271DAED80002CA63 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				712FB393271DAE0D0002CA63 /* InfoPlist.strings */,
+				71606EF2271D9025002837D3 /* Localizable.strings */,
+			);
+			path = Localisation;
 			sourceTree = "<group>";
 		};
 		717E2F2626B3131E00210163 /* Fonts */ = {
@@ -203,8 +212,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				de,
+				Base,
 			);
 			mainGroup = 7119F33F26B1D9F900F96863;
 			productRefGroup = 7119F34926B1D9FA00F96863 /* Products */;
@@ -222,10 +231,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7123329D26F5120200581A34 /* LondrinaSolid.ttf in Resources */,
+				712FB395271DAE0D0002CA63 /* InfoPlist.strings in Resources */,
 				7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */,
 				7119F36126B1E08800F96863 /* Definitions.rtf in Resources */,
+				71606EF0271D9025002837D3 /* Localizable.strings in Resources */,
+				71606EF5271DA428002837D3 /* markers.json in Resources */,
 				7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */,
-				71362B75271D76FD000E3FBE /* markers.json in Resources */,
 				7123329A26F50B3300581A34 /* Changelog.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,9 +261,7 @@
 				717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */,
 				7119F36326B1F33800F96863 /* PrimaryButtons.swift in Sources */,
 				7119F36C26B20F5600F96863 /* FoodboxDetailView.swift in Sources */,
-				71A914B226DFBD39005D0070 /* LoadingView.swift in Sources */,
 				717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */,
-				7119F35F26B1DF8100F96863 /* AddFoodboxView.swift in Sources */,
 				71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */,
 				71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */,
 			);
@@ -260,11 +269,32 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		712FB393271DAE0D0002CA63 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				712FB394271DAE0D0002CA63 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71606EF2271D9025002837D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71606EF1271D9025002837D3 /* en */,
+				71606EF3271D9063002837D3 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		7119F35526B1D9FC00F96863 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -326,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -393,7 +424,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.0;
+				MARKETING_VERSION = 0.7.5;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.heuser.Eatdebox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -417,7 +448,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.0;
+				MARKETING_VERSION = 0.7.5;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.heuser.Eatdebox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

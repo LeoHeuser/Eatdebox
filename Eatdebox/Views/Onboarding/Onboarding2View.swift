@@ -20,12 +20,12 @@ struct Onboarding2View: View {
             
             Spacer()
             
-            Text("Find the Foodboxes next to you.")
+            Text(NSLocalizedString("onboaring2_header", comment: ""))
                 .font(.headline)
                 .multilineTextAlignment(.center)
                 .padding(.bottom)
             
-            Text("Eatdebox wants to use the location of your iPhone while you use the app. Your location helps to show Foodboxes around you.")
+            Text(NSLocalizedString("onboaring2_text", comment: ""))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
             
@@ -33,7 +33,7 @@ struct Onboarding2View: View {
             NavigationLink(
                 destination: Onboarding3View(),
                 label: {
-                    PrimaryTextButton(buttonText: "Ask me")
+                    PrimaryTextButton(buttonText:  NSLocalizedString("button_locationPermission", comment: ""))
                 }).padding(.bottom)
         }
         .navigationBarHidden(true)

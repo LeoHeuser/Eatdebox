@@ -1,0 +1,8 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Eatdebox";
+
+/* Bundle name */
+"CFBundleName" = "Eatdebox";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Eatdebox möchte auf deinen aktuellen Standort zugreifen, während du die App benutzt, um dir Foodboxes in deiner Nähe auf der Karte anzuzeigen.";
