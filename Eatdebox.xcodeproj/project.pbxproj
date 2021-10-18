@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		7123329A26F50B3300581A34 /* Changelog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7123329926F50B3300581A34 /* Changelog.rtf */; };
 		7123329D26F5120200581A34 /* LondrinaSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* LondrinaSolid.ttf */; };
 		712FB395271DAE0D0002CA63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 712FB393271DAE0D0002CA63 /* InfoPlist.strings */; };
+		7139DA7B271DBCD60050F34F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7139DA7A271DBCD60050F34F /* SwiftSoup */; };
 		7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */; };
 		71606EF0271D9025002837D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71606EF2271D9025002837D3 /* Localizable.strings */; };
 		71606EF5271DA428002837D3 /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 71606EF4271DA428002837D3 /* markers.json */; };
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7139DA7B271DBCD60050F34F /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +190,9 @@
 			dependencies = (
 			);
 			name = Eatdebox;
+			packageProductDependencies = (
+				7139DA7A271DBCD60050F34F /* SwiftSoup */,
+			);
 			productName = Eatdebox;
 			productReference = 7119F34826B1D9FA00F96863 /* Eatdebox.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +221,9 @@
 				Base,
 			);
 			mainGroup = 7119F33F26B1D9F900F96863;
+			packageReferences = (
+				7139DA79271DBCD60050F34F /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 7119F34926B1D9FA00F96863 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -414,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = edb_red;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
 				DEVELOPMENT_TEAM = 8C7WM5V4Q4;
 				ENABLE_PREVIEWS = YES;
@@ -424,7 +432,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.5;
+				MARKETING_VERSION = 0.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.heuser.Eatdebox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -438,7 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = edb_red;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
 				DEVELOPMENT_TEAM = 8C7WM5V4Q4;
 				ENABLE_PREVIEWS = YES;
@@ -448,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.5;
+				MARKETING_VERSION = 0.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.heuser.Eatdebox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -478,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7139DA79271DBCD60050F34F /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7139DA7A271DBCD60050F34F /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7139DA79271DBCD60050F34F /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7119F34026B1D9F900F96863 /* Project object */;
 }

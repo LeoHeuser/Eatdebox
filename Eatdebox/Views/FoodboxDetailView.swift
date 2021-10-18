@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreLocation
+import SwiftSoup
 
 struct FoodboxDetailView: View {
     
@@ -56,10 +57,10 @@ struct FoodboxDetailView: View {
             
             .navigationBarItems(trailing:
                                     Button {
-                                                UIApplication.shared.open(URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)")!)
-                                            } label: {
-                                                Image(systemName: "network")
-                                            }
+                UIApplication.shared.open(URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)")!)
+            } label: {
+                Image(systemName: "network")
+            }
             )
         }
         .accentColor(Color("edb_red"))
@@ -71,6 +72,7 @@ struct FoodboxDetailView: View {
         }
         .onAppear(){
             calculateAddressfromLatAndLong()
+            getStringFromURL()
         }
     }
     
@@ -111,22 +113,29 @@ struct FoodboxDetailView: View {
         })
     }
     
+    
+    
+    
+    
     func getStringFromURL() {
-        let foodboxUrl = "https://foodsharing.de/?page=fairteiler&sub=ft&bid=1737&id=\(foodbox_id)"
-        foodbox_description = foodboxUrl
-        
-        //        guard let theUrl = URL(string: foodboxUrl) else {
-        //            print("Error: \(foodboxUrl) doesn't seem to be a valid URL")
-        //            return
-        //        }
-        //
-        //        do {
-        //            let myHTMLString = try String(contentsOf: theUrl, encoding: .utf8)
-        //            //print("HTML : \(myHTMLString)")
-        //            foodbox_description = myHTMLString
-        //        } catch let error {
-        //            print("Error: \(error)")
-        //        }
+        guard let theUrl = URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)") else {
+            print("Error: URL doesn't seem to be a valid URL")
+            return
+        }
+        do {
+            let htmlString = try String(contentsOf: theUrl, encoding: .utf8)
+            guard let doc: Document = try? SwiftSoup.parse(htmlString) else { return }
+            
+            // Get description from Foodsharing e.V.
+            let rawDescription: Element? = try doc.select("div.fsp-desc").first()
+            let foodboxDescriptionString = try rawDescription?.text()
+            
+            // Lege den Wert in das Textfeld in SwiftUI
+            foodbox_description = foodboxDescriptionString
+            
+        } catch let error {
+            print("Error: \(error)")
+        }
     }
 }
 
