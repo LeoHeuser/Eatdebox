@@ -103,12 +103,12 @@
 				7119F36426B1FC0500F96863 /* UI Elements */,
 				7119F34F26B1D9FC00F96863 /* Assets.xcassets */,
 				7119F35426B1D9FC00F96863 /* Info.plist */,
+				71362B74271D76FD000E3FBE /* markers.json */,
 				717E2F2626B3131E00210163 /* Fonts */,
 				7119F35126B1D9FC00F96863 /* Preview Content */,
 				71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */,
 				7119F36026B1E08800F96863 /* Definitions.rtf */,
 				7123329926F50B3300581A34 /* Changelog.rtf */,
-				71362B74271D76FD000E3FBE /* markers.json */,
 			);
 			path = Eatdebox;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = edb_red;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
@@ -404,7 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = edb_red;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
