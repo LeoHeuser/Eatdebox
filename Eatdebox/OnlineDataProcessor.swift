@@ -37,21 +37,6 @@ class OnlineDataProcessor {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     func getData() {
         let task = URLSession.shared.dataTask(with: foodsharingApiURL!, completionHandler: { data, response, error in
             guard let data = data, error == nil else {

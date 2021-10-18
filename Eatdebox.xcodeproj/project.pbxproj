@@ -29,6 +29,7 @@
 		717E2F2526B3058F00210163 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E2F2426B3058F00210163 /* AboutView.swift */; };
 		717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F326B32FB400958B58 /* Onboarding3View.swift */; };
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
+		71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */; };
 		71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB526926D9867B00C850C7 /* LocationManager.swift */; };
 		71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D331DE26EE2FD800209365 /* Foodbox.swift */; };
 		71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */; };
@@ -60,6 +61,7 @@
 		717EB7F126B3147800958B58 /* LondrinaSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LondrinaSolid.ttf; path = Eatdebox/fonts/LondrinaSolid.ttf; sourceTree = SOURCE_ROOT; };
 		717EB7F326B32FB400958B58 /* Onboarding3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
+		71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDataScraper.swift; sourceTree = "<group>"; };
 		71CB526926D9867B00C850C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		71D331DE26EE2FD800209365 /* Foodbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodbox.swift; sourceTree = "<group>"; };
 		71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineDataProcessor.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				7119F37526B21F8400F96863 /* CalculateNavigation.swift */,
 				7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */,
 				71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */,
+				71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */,
 				7119F36D26B214CE00F96863 /* Views */,
 				7119F36426B1FC0500F96863 /* UI Elements */,
 				7119F34F26B1D9FC00F96863 /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 				717E2F2526B3058F00210163 /* AboutView.swift in Sources */,
 				7119F34E26B1D9FA00F96863 /* MapView.swift in Sources */,
 				7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */,
+				71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */,
 				7119F34C26B1D9FA00F96863 /* EatdeboxApp.swift in Sources */,
 				7119F36F26B2151B00F96863 /* FoodboxMapMarker.swift in Sources */,
 				7119F36626B2005A00F96863 /* Onboarding1View.swift in Sources */,

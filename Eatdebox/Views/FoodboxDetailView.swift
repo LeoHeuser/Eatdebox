@@ -16,6 +16,8 @@ struct FoodboxDetailView: View {
     var foodbox_latitude:Double
     var foodbox_longitude:Double
     
+    var foodboxDataScraper = FoodboxDataScraper()
+    
     // Additional Offline-Parameters
     @State private var foodbox_streetname:String?
     @State private var foodbox_streetnumber:String?
@@ -25,7 +27,7 @@ struct FoodboxDetailView: View {
     @State private var foodbox_kind_hosting:String?
     @State private var foodbox_description:String?
     
-    @State private var foodboxAddress:String = NSLocalizedString("label_loading", comment: "") // Combination of multiple parameters here
+    @State private var foodboxAddress:String = NSLocalizedString("label_loadingAddress", comment: "") // Combination of multiple parameters here
     
     // View
     var body: some View {
@@ -71,8 +73,10 @@ struct FoodboxDetailView: View {
             SecondaryTextButton(buttonText: NSLocalizedString("button_navigationToFoodbox", comment: ""))
         }
         .onAppear(){
-            calculateAddressfromLatAndLong()
-            getStringFromURL()
+            DispatchQueue.global(qos: .default).async {
+                foodbox_description = foodboxDataScraper.getFoodboxDescription(foodboxID: foodbox_id)
+                calculateAddressfromLatAndLong()
+            }
         }
     }
     
@@ -111,31 +115,6 @@ struct FoodboxDetailView: View {
             }
             foodboxAddress = "\(foodbox_streetname ?? "") \(foodbox_streetnumber ?? "")\n\(foodbox_postcode ?? "") \(foodbox_cityname ?? "")\n\(foodbox_country ?? "")"
         })
-    }
-    
-    
-    
-    
-    
-    func getStringFromURL() {
-        guard let theUrl = URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)") else {
-            print("Error: URL doesn't seem to be a valid URL")
-            return
-        }
-        do {
-            let htmlString = try String(contentsOf: theUrl, encoding: .utf8)
-            guard let doc: Document = try? SwiftSoup.parse(htmlString) else { return }
-            
-            // Get description from Foodsharing e.V.
-            let rawDescription: Element? = try doc.select("div.fsp-desc").first()
-            let foodboxDescriptionString = try rawDescription?.text()
-            
-            // Lege den Wert in das Textfeld in SwiftUI
-            foodbox_description = foodboxDescriptionString
-            
-        } catch let error {
-            print("Error: \(error)")
-        }
     }
 }
 
