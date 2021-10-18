@@ -18,6 +18,11 @@ struct AboutView: View {
         Form {
             StaticFoodboxParameter(parameter: "App Version", value: appVersionVariable)
             StaticFoodboxParameter(parameter: "Dataset Version", value: "October 2021 (\(loadOfflineJSON().count) Foodboxes)")
+            Button {
+                print("Download button pressed...")
+            } label: {
+                Text("Download latest Foodboxes")
+            }
             
             Section(header: Text("Become active and help"), footer: Text("The project Eatdebox has nothing to do with the Foodsharing e.V. in the German-speaking area. We only aim at a similar goal.")) {
                 Link("Rules and tips for sharing food", destination: URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)

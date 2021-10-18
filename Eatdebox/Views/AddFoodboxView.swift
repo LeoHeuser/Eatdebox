@@ -54,15 +54,14 @@ struct AddFoodboxView: View {
             }
         }
         .navigationBarTitle("Add Foodbox")
-        .toolbar {
-            ToolbarItemGroup(placement: .navigationBarTrailing) {
-                Button {
-                    UIApplication.shared.endEditing()
-                } label: {
-                    Image(systemName: "keyboard.chevron.compact.down")
-                }
-            }
-        }
+        
+        .navigationBarItems(trailing:
+                                Button {
+                                    UIApplication.shared.endEditing()
+                                } label: {
+                                    Image(systemName: "keyboard.chevron.compact.down")
+                                }
+        )
         .accentColor(Color("edb_red"))
     }
 }

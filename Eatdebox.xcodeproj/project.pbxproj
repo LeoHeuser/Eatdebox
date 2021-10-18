@@ -18,12 +18,11 @@
 		7119F36A26B2056800F96863 /* Onboarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36926B2056800F96863 /* Onboarding2View.swift */; };
 		7119F36C26B20F5600F96863 /* FoodboxDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */; };
 		7119F36F26B2151B00F96863 /* FoodboxMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */; };
-		7119F37226B2181D00F96863 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37126B2181D00F96863 /* CustomHeader.swift */; };
 		7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */; };
 		7119F37626B21F8400F96863 /* CalculateNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37526B21F8400F96863 /* CalculateNavigation.swift */; };
-		7122D45827065DD200C4E26B /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7122D45727065DD200C4E26B /* markers.json */; };
 		7123329A26F50B3300581A34 /* Changelog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7123329926F50B3300581A34 /* Changelog.rtf */; };
 		7123329D26F5120200581A34 /* LondrinaSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* LondrinaSolid.ttf */; };
+		71362B75271D76FD000E3FBE /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 71362B74271D76FD000E3FBE /* markers.json */; };
 		7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */; };
 		717E2F2526B3058F00210163 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E2F2426B3058F00210163 /* AboutView.swift */; };
 		717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F326B32FB400958B58 /* Onboarding3View.swift */; };
@@ -48,11 +47,10 @@
 		7119F36926B2056800F96863 /* Onboarding2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding2View.swift; sourceTree = "<group>"; };
 		7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDetailView.swift; sourceTree = "<group>"; };
 		7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxMapMarker.swift; sourceTree = "<group>"; };
-		7119F37126B2181D00F96863 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
 		7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFoodboxParameter.swift; sourceTree = "<group>"; };
 		7119F37526B21F8400F96863 /* CalculateNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateNavigation.swift; sourceTree = "<group>"; };
-		7122D45727065DD200C4E26B /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = markers.json; sourceTree = "<group>"; };
 		7123329926F50B3300581A34 /* Changelog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Changelog.rtf; sourceTree = "<group>"; };
+		71362B74271D76FD000E3FBE /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = markers.json; path = ../../../Desktop/markers.json; sourceTree = "<group>"; };
 		71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Annual Self Classification Report (2021).numbers"; sourceTree = "<group>"; };
 		7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDataProcessor.swift; sourceTree = "<group>"; };
 		717E2F2426B3058F00210163 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -105,12 +103,12 @@
 				7119F36426B1FC0500F96863 /* UI Elements */,
 				7119F34F26B1D9FC00F96863 /* Assets.xcassets */,
 				7119F35426B1D9FC00F96863 /* Info.plist */,
-				7122D45727065DD200C4E26B /* markers.json */,
 				717E2F2626B3131E00210163 /* Fonts */,
 				7119F35126B1D9FC00F96863 /* Preview Content */,
 				71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */,
 				7119F36026B1E08800F96863 /* Definitions.rtf */,
 				7123329926F50B3300581A34 /* Changelog.rtf */,
+				71362B74271D76FD000E3FBE /* markers.json */,
 			);
 			path = Eatdebox;
 			sourceTree = "<group>";
@@ -129,7 +127,6 @@
 				7119F36226B1F33800F96863 /* PrimaryButtons.swift */,
 				717EB7F526B3314200958B58 /* SecondaryButtons.swift */,
 				7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */,
-				7119F37126B2181D00F96863 /* CustomHeader.swift */,
 				7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */,
 			);
 			path = "UI Elements";
@@ -227,7 +224,7 @@
 				7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */,
 				7119F36126B1E08800F96863 /* Definitions.rtf in Resources */,
 				7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */,
-				7122D45827065DD200C4E26B /* markers.json in Resources */,
+				71362B75271D76FD000E3FBE /* markers.json in Resources */,
 				7123329A26F50B3300581A34 /* Changelog.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +254,6 @@
 				7119F35F26B1DF8100F96863 /* AddFoodboxView.swift in Sources */,
 				71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */,
 				71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */,
-				7119F37226B2181D00F96863 /* CustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

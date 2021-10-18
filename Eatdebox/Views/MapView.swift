@@ -56,15 +56,13 @@ struct MapView: View {
                 .padding(.bottom)
             }
             .navigationBarTitle("Eatdebox")
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    NavigationLink(
-                        destination: AboutView(),
-                        label: {
-                            Image(systemName: "info.circle")
-                        })
-                }
-            }
+            .navigationBarItems(trailing:
+                                    NavigationLink(
+                                        destination: AboutView(),
+                                        label: {
+                                            Image(systemName: "info.circle")
+                                        })
+            )
         }
         .accentColor(Color("edb_red"))
         .onAppear(){

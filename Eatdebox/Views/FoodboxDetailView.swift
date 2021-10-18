@@ -28,29 +28,37 @@ struct FoodboxDetailView: View {
     
     // View
     var body: some View {
-        CustomHeader(headerText: "Foodbox \(foodbox_streetname ?? String(foodbox_id))")
-        
-        List {
-            Section(header: Text("")) {
-                StaticFoodboxParameter(parameter: "Foodbox ID", value: "\(foodbox_id)")
-                
-                StaticFoodboxParameter(parameter: "Address", value: foodboxAddress)
-                
-                StaticFoodboxParameter(parameter: "Hosting type", value: "\(foodbox_kind_hosting ?? "Loading data...")")
-                
-                StaticFoodboxParameter(parameter: "Last activity", value: "\(foodbox_kind_hosting ?? "Loading data...")")
-            }
-            
-            Section(header: Text("Description")) {
-                Text(foodbox_description ?? "Loading data...")
-                
-                Button {
-                    UIApplication.shared.open(URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
-                } label: {
-                    Text("Rules and tips for sharing food")
+        NavigationView {
+            List {
+                Section(header: Text("")) {
+                    StaticFoodboxParameter(parameter: "Foodbox ID", value: "\(foodbox_id)")
+                    
+                    StaticFoodboxParameter(parameter: "Address", value: foodboxAddress)
+                    
+                    StaticFoodboxParameter(parameter: "Hosting type", value: "\(foodbox_kind_hosting ?? "Loading data...")")
+                    
+                    StaticFoodboxParameter(parameter: "Last activity", value: "\(foodbox_kind_hosting ?? "Loading data...")")
                 }
+                
+                Section(header: Text("Description")) {
+                    Text(foodbox_description ?? "Loading data...")
+                    
+                    Button {
+                        UIApplication.shared.open(URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
+                    } label: {
+                        Text("Rules and tips for sharing food")
+                    }
+                }
+                
             }
-            
+            .navigationBarTitle("Foodbox \(foodbox_streetname ?? String(foodbox_id))", displayMode: .inline)
+            .navigationBarItems(trailing:
+                                    Button {
+                                                UIApplication.shared.open(URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)")!)
+                                            } label: {
+                                                Image(systemName: "network")
+                                            }
+            )
         }
         .accentColor(Color("edb_red"))
         
@@ -59,8 +67,6 @@ struct FoodboxDetailView: View {
         } label: {
             SecondaryTextButton(buttonText: "Navigate me to this Foodbox")
         }
-//        .padding(.bottom)
-        
         .onAppear(){
             calculateAddressfromLatAndLong()
         }
@@ -107,18 +113,18 @@ struct FoodboxDetailView: View {
         let foodboxUrl = "https://foodsharing.de/?page=fairteiler&sub=ft&bid=1737&id=\(foodbox_id)"
         foodbox_description = foodboxUrl
         
-//        guard let theUrl = URL(string: foodboxUrl) else {
-//            print("Error: \(foodboxUrl) doesn't seem to be a valid URL")
-//            return
-//        }
-//
-//        do {
-//            let myHTMLString = try String(contentsOf: theUrl, encoding: .utf8)
-//            //print("HTML : \(myHTMLString)")
-//            foodbox_description = myHTMLString
-//        } catch let error {
-//            print("Error: \(error)")
-//        }
+        //        guard let theUrl = URL(string: foodboxUrl) else {
+        //            print("Error: \(foodboxUrl) doesn't seem to be a valid URL")
+        //            return
+        //        }
+        //
+        //        do {
+        //            let myHTMLString = try String(contentsOf: theUrl, encoding: .utf8)
+        //            //print("HTML : \(myHTMLString)")
+        //            foodbox_description = myHTMLString
+        //        } catch let error {
+        //            print("Error: \(error)")
+        //        }
     }
 }
 
