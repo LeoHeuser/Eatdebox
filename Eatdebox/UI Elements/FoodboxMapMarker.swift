@@ -30,6 +30,6 @@ struct MapMarker_Previews: PreviewProvider {
     static var previews: some View {
         FoodboxMapMarker()
             .previewLayout(.sizeThatFits)
-            
+        
     }
 }

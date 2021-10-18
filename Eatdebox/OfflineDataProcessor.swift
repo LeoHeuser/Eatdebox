@@ -14,7 +14,7 @@ func loadOfflineJSON() -> [Foodbox] {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             let jsonData = try
-                decoder.decode(ResponseData.self, from: data)
+            decoder.decode(ResponseData.self, from: data)
             print("Array with \(jsonData.fairteiler.count) items created")
             return jsonData.fairteiler
         } catch {

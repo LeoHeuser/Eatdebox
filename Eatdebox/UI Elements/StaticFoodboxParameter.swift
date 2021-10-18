@@ -48,11 +48,41 @@ struct StaticFoodboxParameterWithStatus: View {
 }
 
 
+struct StaticFoodboxParameterWithClipboard: View {
+    var parameter: String
+    var value: String
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(parameter)
+                .foregroundColor(Color("edb_darkGrey"))
+                .lineLimit(1)
+            HStack {
+                Text(value)
+                Spacer()
+                Button {
+                    let hapticFeedback = UIImpactFeedbackGenerator(style: .heavy)
+                    hapticFeedback.prepare()
+                    UIPasteboard.general.string = value
+                    // Provide haptic feedback when address is copied to the clipboard
+                    hapticFeedback.impactOccurred()
+                } label: {
+                    Image(systemName: "doc.on.doc")
+                }
+            }
+        }
+        .frame(maxWidth:.infinity, alignment: .leading)
+        //.padding(.vertical)
+    }
+}
+
 struct StaticFoodboxParameter_Previews: PreviewProvider {
     static var previews: some View {
         StaticFoodboxParameter(parameter: "Parameter", value: "Value")
             .previewLayout(.sizeThatFits)
         StaticFoodboxParameterWithStatus(parameter: "Parameter", value: "Value", statusColor: .red)
+            .previewLayout(.sizeThatFits)
+        StaticFoodboxParameterWithClipboard(parameter: "Parameter", value: "Value")
             .previewLayout(.sizeThatFits)
     }
 }

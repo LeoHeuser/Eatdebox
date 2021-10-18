@@ -10,6 +10,7 @@ import SwiftSoup
 
 struct FoodboxDataScraper {
     
+    
     private func getRawFoodboxHtml(foodboxID: Int) -> String {
         var htmlString: String?
         
@@ -22,6 +23,7 @@ struct FoodboxDataScraper {
         } catch let error {
             print("Error: \(error)")
         }
+        
         return htmlString ?? "Empty URL"
     }
     
@@ -31,9 +33,21 @@ struct FoodboxDataScraper {
         let rawHTML = getRawFoodboxHtml(foodboxID: foodboxID)
         
         guard let doc: Document = try? SwiftSoup.parse(rawHTML) else { return "Empty HTML" }
-        // Get description from Foodsharing e.V.
         let rawDescription: Element? = try? doc.select("div.fsp-desc").first()
         let foodboxDescriptionString = try? rawDescription?.text()
+        
         return foodboxDescriptionString
+    }
+    
+    
+    
+    func getFoodboxName(foodboxID: Int) -> String? {
+        let rawHTML = getRawFoodboxHtml(foodboxID: foodboxID)
+        
+        guard let doc: Document = try? SwiftSoup.parse(rawHTML) else { return "Empty HTML" }
+        let rawActivity: Element? = try? doc.select("div.head").first()
+        let foodboxActivityString = try? rawActivity?.text()
+        
+        return foodboxActivityString
     }
 }

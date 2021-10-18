@@ -27,8 +27,8 @@ struct AboutView: View {
                 Text(NSLocalizedString("button_downloadFoodboxes", comment: ""))
             }
             .alert(isPresented: $showingMissingFeatureAlert) {
-                        Alert(title: Text(NSLocalizedString("alert_title", comment: "")), message: Text(NSLocalizedString("alert_text", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
-                    }
+                Alert(title: Text(NSLocalizedString("alert_title", comment: "")), message: Text(NSLocalizedString("alert_text", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
+            }
             
             
             Section(header: Text(NSLocalizedString("becomeActive_header", comment: "")), footer: Text(NSLocalizedString("becomeActive_footer", comment: ""))) {

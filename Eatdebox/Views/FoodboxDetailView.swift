@@ -26,6 +26,7 @@ struct FoodboxDetailView: View {
     @State private var foodbox_country:String?
     @State private var foodbox_kind_hosting:String?
     @State private var foodbox_description:String?
+    @State private var foodbox_lastActivity:String?
     
     @State private var foodboxAddress:String = NSLocalizedString("label_loadingAddress", comment: "") // Combination of multiple parameters here
     
@@ -36,11 +37,11 @@ struct FoodboxDetailView: View {
                 Section(header: Text("")) {
                     StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_id", comment: ""), value: "\(foodbox_id)")
                     
-                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_address", comment: ""), value: foodboxAddress)
+                    StaticFoodboxParameterWithClipboard(parameter: NSLocalizedString("foodbox_address", comment: ""), value: foodboxAddress)
                     
                     StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_hostingType", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_loading", comment: ""))")
                     
-                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_loading", comment: ""))")
+                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_lastActivity ?? NSLocalizedString("label_loading", comment: ""))")
                 }
                 
                 Section(header: Text(NSLocalizedString("foodbox_header_description", comment: ""))) {
@@ -54,9 +55,7 @@ struct FoodboxDetailView: View {
                 }
                 
             }
-            //.navigationBarTitle("Foodbox \(foodbox_streetname ?? String(foodbox_id))", displayMode: .inline)
             .navigationBarTitle(NSLocalizedString("foodbox", comment: "") + (foodbox_streetname ?? String(foodbox_id)), displayMode: .inline)
-            
             .navigationBarItems(trailing:
                                     Button {
                 UIApplication.shared.open(URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)")!)
