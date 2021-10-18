@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Eatdebox/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Eatdebox</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Eatdebox</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Eatdebox would like to access your current location only while you using the app for show in the map.</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Eatdebox/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.0" build-num="13A233"/>
+    </header>
+    <body>
+      <trans-unit id="Additional Information (optional)" xml:space="preserve">
+        <source>Additional Information (optional)</source>
+        <target>Zusätzliche Informationen (fakultativ)</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Address of the Foodbox" xml:space="preserve">
+        <source>Address of the Foodbox</source>
+        <target>Adresse der Foodbox</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Become active and help" xml:space="preserve">
+        <source>Become active and help</source>
+        <target>Aktiv werden und helfen</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Description" xml:space="preserve">
+        <source>Description</source>
+        <target>Beschreibung</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Download latest Foodboxes" xml:space="preserve">
+        <source>Download latest Foodboxes</source>
+        <target>Neueste Foodboxen herunterladen</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Downloading the latest and yummiest Foodboxes from the Foodsharing e.V. API..." xml:space="preserve">
+        <source>Downloading the latest and yummiest Foodboxes from the Foodsharing e.V. API...</source>
+        <target>Herunterladen der neuesten und leckersten Foodboxen von der Foodsharing e.V. API...</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Eatdebox wants to use the location of your iPhone while you use the app. Your location helps to show Foodboxes around you." xml:space="preserve">
+        <source>Eatdebox wants to use the location of your iPhone while you use the app. Your location helps to show Foodboxes around you.</source>
+        <target>Eatdebox möchte den Standort deines iPhones nutzen, während du die App verwendest. Ihr Standort hilft dabei, Foodboxes in Ihrer Nähe anzuzeigen.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Find free food in your area to save it from the trash and save money. Foodboxes where you can share your food with others and take it if you need it." xml:space="preserve">
+        <source>Find free food in your area to save it from the trash and save money. Foodboxes where you can share your food with others and take it if you need it.</source>
+        <target>Finden Sie kostenlose Lebensmittel in Ihrer Umgebung, um sie vor dem Müll zu retten und Geld zu sparen. Foodboxen, in denen Sie Ihre Lebensmittel mit anderen teilen und bei Bedarf mitnehmen können.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Find the Foodboxes next to you." xml:space="preserve">
+        <source>Find the Foodboxes next to you.</source>
+        <target>Suchen Sie die Foodboxen in Ihrer Nähe.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Houston, we have no problem." xml:space="preserve">
+        <source>Houston, we have no problem.</source>
+        <target>Houston, wir haben kein Problem.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="In a later update, the data will also be available in real time from the Foodsharing e.V. API. Look forward to it." xml:space="preserve">
+        <source>In a later update, the data will also be available in real time from the Foodsharing e.V. API. Look forward to it.</source>
+        <target>In einem späteren Update werden die Daten auch in Echtzeit über die Foodsharing e.V. API verfügbar sein. Freuen Sie sich darauf.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Legal Stuff" xml:space="preserve">
+        <source>Legal Stuff</source>
+        <target>Rechtliche Dinge</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Loading data..." xml:space="preserve">
+        <source>Loading data...</source>
+        <target>Daten werden geladen...</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Made with ❤️ to fight against food waste" xml:space="preserve">
+        <source>Made with ❤️ to fight against food waste</source>
+        <target>Geschaffen mit ❤️ zur Bekämpfung der Lebensmittelverschwendung</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Rules and tips for sharing food" xml:space="preserve">
+        <source>Rules and tips for sharing food</source>
+        <target>Regeln und Tipps für die gemeinsame Nutzung von Lebensmitteln</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Send Email" xml:space="preserve">
+        <source>Send Email</source>
+        <target>E-Mail senden</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The Foodboxe’s data is handpicked and embedded into the app. Therefore, you may not have all the Foodboxes on your radar right away. But we are working on it." xml:space="preserve">
+        <source>The Foodboxe’s data is handpicked and embedded into the app. Therefore, you may not have all the Foodboxes on your radar right away. But we are working on it.</source>
+        <target>Die Daten der Foodboxe sind handverlesen und in die App integriert. Daher kann es sein, dass du nicht alle Foodboxen sofort auf deinem Radar hast. Aber wir arbeiten daran.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The data you provide will be processed according to our privacy policy. At no point in time we will share your email or the content with third parties." xml:space="preserve">
+        <source>The data you provide will be processed according to our privacy policy. At no point in time we will share your email or the content with third parties.</source>
+        <target>Die von Ihnen zur Verfügung gestellten Daten werden gemäß unserer Datenschutzrichtlinie verarbeitet. Zu keinem Zeitpunkt werden wir Ihre E-Mail oder den Inhalt an Dritte weitergeben.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The project Eatdebox has nothing to do with the Foodsharing e.V. in the German-speaking area. We only aim at a similar goal." xml:space="preserve">
+        <source>The project Eatdebox has nothing to do with the Foodsharing e.V. in the German-speaking area. We only aim at a similar goal.</source>
+        <target>Das Projekt Eatdebox hat nichts mit dem Foodsharing e.V. im deutschsprachigen Raum zu tun. Wir verfolgen lediglich ein ähnliches Ziel.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This can take up to 1 minute." xml:space="preserve">
+        <source>This can take up to 1 minute.</source>
+        <target>Dies kann bis zu 1 Minute dauern.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This is Eatdebox." xml:space="preserve">
+        <source>This is Eatdebox.</source>
+        <target>Dies ist Eatdebox.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

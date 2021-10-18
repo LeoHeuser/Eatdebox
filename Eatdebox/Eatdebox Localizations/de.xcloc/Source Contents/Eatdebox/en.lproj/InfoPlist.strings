@@ -1,0 +1,6 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Eatdebox";
+/* Bundle name */
+"CFBundleName" = "Eatdebox";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Eatdebox would like to access your current location only while you using the app for show in the map.";
