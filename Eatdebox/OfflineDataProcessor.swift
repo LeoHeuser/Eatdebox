@@ -9,6 +9,9 @@ import Foundation
 
 // Functions to load the data
 func loadOfflineJSON() -> [Foodbox] {
+    
+    let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("markers.json")
+    
     if let url = Bundle.main.url(forResource: "markers", withExtension: "json") {
         do {
             let data = try Data(contentsOf: url)

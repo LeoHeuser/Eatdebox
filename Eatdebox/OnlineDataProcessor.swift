@@ -8,70 +8,48 @@
 import Foundation
 
 class OnlineDataProcessor {
+    
+    // Variables
     let foodsharingApiURL = URL(string: "https://foodsharing.de/api/map/markers?types=fairteiler")
+    let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("markers.json")
     
-    var foodsharingApiData:Data?
-    var foodsharingArray:OnlineResponseData?
+    // Functions
     
-    struct OnlineResponseData: Decodable {
-        var fairteiler:[Foodbox]
-    }
-    
-    // Just get the data
-    func getDataFromApi() {
-        var datis:Data?
-        URLSession.shared.dataTask(with: foodsharingApiURL!) { data, response, error in
-            if let data = data {
-                self.foodsharingApiData = data
-                print("I saved \(data) to the variable foodsharingApiData")
-            }
-        }.resume()
-    }
-    
-    func processApiData() {
-        do {
-            self.foodsharingArray = try JSONDecoder().decode(OnlineResponseData.self, from: foodsharingApiData!)
-            print("foodsharingArray is: \(foodsharingArray)")
-        } catch {
-            print("failed to convert \(error.localizedDescription)")
-        }
-    }
-    
-    func getData() {
-        let task = URLSession.shared.dataTask(with: foodsharingApiURL!, completionHandler: { data, response, error in
-            guard let data = data, error == nil else {
-                print("Error brudi!")
-                return
-            }
-            // have data
-            var result:OnlineResponseData?
-            do {
-                result = try JSONDecoder().decode(OnlineResponseData.self, from: data)
-            } catch {
-                print("failed to convert \(error.localizedDescription)")
-            }
-            guard let json = result else {
-                return
-            }
-            print(json.fairteiler)
-        })
-        task.resume()
-    }
-    
-    func getData2() {
-        if let url = URL(string: "https://foodsharing.de/api/map/markers?types=fairteiler") {
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                if let data = data {
-                    print("I've got \(data)")
-                    var foodboxArray:OnlineResponseData?
+    // This function gets and stores data from the API in the local drive on the iPhone.
+    func storeData() {
+        if let imageUrl = foodsharingApiURL {
+            URLSession.shared.downloadTask(with: imageUrl) { (tempFileUrl, response, error) in
+                if let jsonTempFileUrl = tempFileUrl {
                     do {
-                        foodboxArray = try JSONDecoder().decode(OnlineResponseData.self, from: data)
-                        print(foodboxArray?.fairteiler[34])
+                        // Write to file
+                        let jsonData = try Data(contentsOf: jsonTempFileUrl)
+                        try jsonData.write(to: self.documentDirectory)
+                        print("Stored " + "\(jsonData)" + " bytes at " + "\(jsonTempFileUrl)")
                     } catch {
-                        print("failed to convert \(error.localizedDescription)")
+                        print("Error")
                     }
                 }
             }.resume()
+        }
+    }
+    
+    // Function to create a String from the stored data
+    func readData() {
+        do {
+            let markers = try String(contentsOf: self.documentDirectory)
+            print(markers)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    // Function to delete data at a specific location
+    func deleteData() {
+        do {
+            try FileManager.default.removeItem(at: documentDirectory)
+            print("All data killed...")
+        } catch {
+            print(error.localizedDescription)
         }
     }
 }

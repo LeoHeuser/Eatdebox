@@ -10,7 +10,7 @@ import SwiftSoup
 
 struct FoodboxDataScraper {
     
-    
+    // Function to get the raw and unfiltered HTML from a Fairteiler (from foodsharing.de).
     private func getRawFoodboxHtml(foodboxID: Int) -> String {
         var htmlString: String?
         
@@ -23,12 +23,10 @@ struct FoodboxDataScraper {
         } catch let error {
             print("Error: \(error)")
         }
-        
         return htmlString ?? "Empty URL"
     }
     
-    
-    
+    // Function to extract the Fairteiler description from HTML.
     func getFoodboxDescription(foodboxID: Int) -> String? {
         let rawHTML = getRawFoodboxHtml(foodboxID: foodboxID)
         
@@ -37,17 +35,5 @@ struct FoodboxDataScraper {
         let foodboxDescriptionString = try? rawDescription?.text()
         
         return foodboxDescriptionString
-    }
-    
-    
-    
-    func getFoodboxName(foodboxID: Int) -> String? {
-        let rawHTML = getRawFoodboxHtml(foodboxID: foodboxID)
-        
-        guard let doc: Document = try? SwiftSoup.parse(rawHTML) else { return "Empty HTML" }
-        let rawActivity: Element? = try? doc.select("div.head").first()
-        let foodboxActivityString = try? rawActivity?.text()
-        
-        return foodboxActivityString
     }
 }

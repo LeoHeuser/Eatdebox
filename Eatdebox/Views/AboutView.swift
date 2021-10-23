@@ -12,6 +12,8 @@ struct AboutView: View {
     // Parameter
     @State private var showingSheet = false
     @State private var showingMissingFeatureAlert = false
+    @State private var datas = 0
+    var onlineDataProcessor = OnlineDataProcessor()
     
     let appVersionVariable = (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String)!
     
@@ -19,15 +21,27 @@ struct AboutView: View {
     var body: some View {
         Form {
             StaticFoodboxParameter(parameter: NSLocalizedString("label_appVersion", comment: ""), value: appVersionVariable)
-            StaticFoodboxParameter(parameter: NSLocalizedString("label_datasetVersion", comment: ""), value: "October 2021 (\(loadOfflineJSON().count) Foodboxes)")
+            StaticFoodboxParameter(parameter: NSLocalizedString("label_datasetVersion", comment: ""), value: "\(loadOfflineJSON().count) Foodboxes")
             Button {
-                print("Download button pressed...")
-                showingMissingFeatureAlert = true
+                onlineDataProcessor.storeData()
+                
+                //showingMissingFeatureAlert = true
             } label: {
-                Text(NSLocalizedString("button_downloadFoodboxes", comment: ""))
+                //Text(NSLocalizedString("button_downloadFoodboxes", comment: ""))
+                Text("Download data")
+            }
+            Button {
+                onlineDataProcessor.deleteData()
+            } label: {
+                Text("Delete data")
+            }
+            Button {
+                onlineDataProcessor.readData()
+            } label: {
+                Text("Read data")
             }
             .alert(isPresented: $showingMissingFeatureAlert) {
-                Alert(title: Text(NSLocalizedString("alert_title", comment: "")), message: Text(NSLocalizedString("alert_text", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
+                Alert(title: Text(NSLocalizedString("alert_title", comment: "")), message: Text(NSLocalizedString("alert_dataText1", comment: "") + " \(7233+89) " + NSLocalizedString("alert_dataText2", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
             }
             
             

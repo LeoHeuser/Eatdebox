@@ -101,4 +101,7 @@
 "alert_title" = "We are still in beta, guys";
 
 /* (No Comment) */
-"alert_text" = "Currently, this function is still under development. Come back later.";
+"alert_dataText1" = "I downloaded";
+
+/* (No Comment) */
+"alert_dataText2" = "bytes of data";

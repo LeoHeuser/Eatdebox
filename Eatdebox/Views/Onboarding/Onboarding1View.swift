@@ -19,18 +19,18 @@ struct Onboarding1View: View {
                     .frame(maxWidth: 100)
                     .foregroundColor(Color("edb_green"))
                 
-                Spacer()
-                
                 Text(NSLocalizedString("onboaring1_header", comment: ""))
-                    .font(.headline)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .padding(.bottom)
+                    .foregroundColor(Color("edb_green"))
+                
+                Spacer()
                 
                 Text(NSLocalizedString("onboaring1_text", comment: ""))
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-                
-                Spacer()
+                    .padding([.leading, .bottom, .trailing])
                 
                 NavigationLink(
                     destination: Onboarding2View(),

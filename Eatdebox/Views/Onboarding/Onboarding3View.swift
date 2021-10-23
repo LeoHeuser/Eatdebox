@@ -21,18 +21,18 @@ struct Onboarding3View: View {
                 .frame(maxWidth: 100)
                 .foregroundColor(Color("edb_green"))
             
-            Spacer()
-            
             Text(NSLocalizedString("onboaring3_header", comment: ""))
-                .font(.headline)
+                .font(.largeTitle)
+                .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .padding(.bottom)
+                .foregroundColor(Color("edb_green"))
+            
+            Spacer()
             
             Text(NSLocalizedString("onboaring3_text", comment: ""))
                 .multilineTextAlignment(.center)
-                .padding(.horizontal)
-            
-            Spacer()
+                .padding([.leading, .bottom, .trailing])
             
             Text(NSLocalizedString("onboaring3_footnote", comment: ""))
                 .font(.footnote)
