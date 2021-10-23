@@ -10,12 +10,12 @@ import MapKit
 
 struct MapView: View {
     @AppStorage("hadOnboarding") var hadOnboarding:Bool = false
+    
     @StateObject private var locationManager = LocationManager()
-    
-    @State private var foodboxData:[Foodbox] = loadOfflineJSON()
     @State private var foodboxItem:Foodbox?
+    @State private var foodboxData:[Foodbox] = []
     
-    var onlineDataProcessor = OnlineDataProcessor()
+    var offlineDataProcessor = OfflineDataProcessor()
     
     var body: some View {
         NavigationView {
@@ -32,6 +32,12 @@ struct MapView: View {
                         } label: {
                             FoodboxMapMarker()
                         }
+                    }
+                }
+                .onAppear(){
+                    DispatchQueue.global(qos: .userInitiated).async {
+                        // Load the data from local file
+                        foodboxData = offlineDataProcessor.loadOfflineJSON()
                     }
                 }
                 .accentColor(Color("edb_green"))
@@ -57,15 +63,14 @@ struct MapView: View {
             }
             .navigationBarTitle(NSLocalizedString("eatdebox_appName", comment: ""))
             .navigationBarItems(trailing:
-                                    NavigationLink(
-                                        destination: AboutView(),
-                                        label: {
-                                            Image(systemName: "info.circle")
-                                        })
+                                    NavigationLink(destination: AboutView()) {
+                Image(systemName: "info.circle")
+            }
             )
         }
         .accentColor(Color("edb_red"))
         .onAppear(){
+            
             hadOnboarding = true
             locationManager.checkIfLocationServiceIsEnable()
         }

@@ -100,3 +100,5 @@
 /* (No Comment) */
 "onboaring3_text" = "Die Daten der Foodboxe sind handverlesen und in die App integriert. Daher kann es sein, dass du nicht alle Foodboxen sofort auf deinem Radar hast. Aber wir arbeiten daran.";
 
+/* (No Comment) */
+"label_missingFeature" = "🚧 Feature in Arbeit 🚧";

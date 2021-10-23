@@ -32,16 +32,17 @@ struct FoodboxDetailView: View {
     
     // View
     var body: some View {
-        NavigationView {
+        
             List {
                 Section(header: Text("")) {
                     StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_id", comment: ""), value: "\(foodbox_id)")
                     
                     StaticFoodboxParameterWithClipboard(parameter: NSLocalizedString("foodbox_address", comment: ""), value: foodboxAddress)
                     
-                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_hostingType", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_loading", comment: ""))")
+                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_hostingType", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_missingFeature", comment: ""))")
                     
-                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_lastActivity ?? NSLocalizedString("label_loading", comment: ""))")
+                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_lastActivity ?? NSLocalizedString("label_missingFeature", comment: ""))")
+                    
                 }
                 
                 Section(header: Text(NSLocalizedString("foodbox_header_description", comment: ""))) {
@@ -63,7 +64,7 @@ struct FoodboxDetailView: View {
                 Image(systemName: "network")
             }
             )
-        }
+        
         .accentColor(Color("edb_red"))
         
         Button {

@@ -9,39 +9,44 @@ import SwiftUI
 
 struct AboutView: View {
     
+    var offlineDataProcessor = OfflineDataProcessor()
+    
     // Parameter
     @State private var showingSheet = false
-    @State private var showingMissingFeatureAlert = false
-    @State private var datas = 0
-    var onlineDataProcessor = OnlineDataProcessor()
+    @State private var showDownloadErrorAlert = false
+    @State private var foodboxCount = "0"
+    @State private var downloadButtonDisbaled = false
     
+    var onlineDataProcessor = OnlineDataProcessor()
     let appVersionVariable = (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String)!
     
     // Functions
     var body: some View {
         Form {
             StaticFoodboxParameter(parameter: NSLocalizedString("label_appVersion", comment: ""), value: appVersionVariable)
-            StaticFoodboxParameter(parameter: NSLocalizedString("label_datasetVersion", comment: ""), value: "\(loadOfflineJSON().count) Foodboxes")
+            StaticFoodboxParameter(parameter: NSLocalizedString("label_datasetVersion", comment: ""), value: foodboxCount)
             Button {
-                onlineDataProcessor.storeData()
-                
-                //showingMissingFeatureAlert = true
+                DispatchQueue.global(qos: .default).async {
+                    downloadButtonDisbaled.toggle()
+                    foodboxCount = "Downloading Foodboxes..."
+                    onlineDataProcessor.getAndStoreData()
+                    sleep(3)
+                    
+                    // Checks if the new data are valid
+                    if onlineDataProcessor.checkIfDataIsValid() {
+                        foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + " Foodboxes"
+                    } else {
+                        showDownloadErrorAlert = true
+                        foodboxCount = "Error with last download"
+                    }
+                    downloadButtonDisbaled.toggle()
+                }
             } label: {
-                //Text(NSLocalizedString("button_downloadFoodboxes", comment: ""))
-                Text("Download data")
+                Text(NSLocalizedString("button_downloadFoodboxes", comment: ""))
             }
-            Button {
-                onlineDataProcessor.deleteData()
-            } label: {
-                Text("Delete data")
-            }
-            Button {
-                onlineDataProcessor.readData()
-            } label: {
-                Text("Read data")
-            }
-            .alert(isPresented: $showingMissingFeatureAlert) {
-                Alert(title: Text(NSLocalizedString("alert_title", comment: "")), message: Text(NSLocalizedString("alert_dataText1", comment: "") + " \(7233+89) " + NSLocalizedString("alert_dataText2", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
+            .disabled(downloadButtonDisbaled)
+            .alert(isPresented: $showDownloadErrorAlert) {
+                Alert(title: Text(NSLocalizedString("alert_title", comment: "")), message: Text(NSLocalizedString("alert_dataText1", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
             }
             
             
@@ -53,6 +58,9 @@ struct AboutView: View {
                 Link(NSLocalizedString("button_imprint", comment: ""), destination: URL(string: "https://eatdebox.eu/imprint/")!)
                 Link(NSLocalizedString("button_dataPrivacy", comment: ""), destination: URL(string: "https://eatdebox.eu/data-privacy/")!)
             }
+        }
+        .onAppear() {
+            foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + " Foodboxes"
         }
         Text(NSLocalizedString("madeWithLove", comment: ""))
             .multilineTextAlignment(.center)

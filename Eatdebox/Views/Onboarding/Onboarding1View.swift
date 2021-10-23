@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Onboarding1View: View {
+    
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -32,11 +34,10 @@ struct Onboarding1View: View {
                     .multilineTextAlignment(.center)
                     .padding([.leading, .bottom, .trailing])
                 
-                NavigationLink(
-                    destination: Onboarding2View(),
-                    label: {
-                        PrimaryTextButton(buttonText: NSLocalizedString("button_next", comment: ""))
-                    }).padding(.bottom)
+                NavigationLink(destination: Onboarding2View()) {
+                    PrimaryTextButton(buttonText: NSLocalizedString("button_next", comment: ""))
+                }
+                .padding(.bottom)
             }
         }
         .navigationBarHidden(true)

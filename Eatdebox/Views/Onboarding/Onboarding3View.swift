@@ -6,10 +6,8 @@
 //
 
 import SwiftUI
-import MapKit
 
 struct Onboarding3View: View {
-    let locationManager = LocationManager()
     
     var body: some View {
         VStack {
@@ -39,16 +37,12 @@ struct Onboarding3View: View {
                 .foregroundColor(Color("edb_darkGrey"))
                 .multilineTextAlignment(.center)
             
-            NavigationLink(
-                destination: MapView(),
-                label: {
+            NavigationLink(destination: MapView()) {
                     PrimaryTextButton(buttonText: NSLocalizedString("button_finish", comment: ""))
-                }).padding(.bottom)
+                }
+                .padding(.bottom)
         }
         .navigationBarHidden(true)
-        .onAppear() {
-            locationManager.checkIfLocationServiceIsEnable()
-        }
     }
 }
 

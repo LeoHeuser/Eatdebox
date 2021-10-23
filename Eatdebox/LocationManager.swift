@@ -8,8 +8,11 @@
 import MapKit
 
 enum MapDetails {
+    // Center of Germany
     static let defaultLocation = CLLocationCoordinate2D(latitude: 51.383636, longitude: 10.379746)
+    // See an radius around 5 km
     static let closeSpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+    // See whole Germany
     static let wideSpan = MKCoordinateSpan(latitudeDelta: 10.0, longitudeDelta: 10.0)
 }
 

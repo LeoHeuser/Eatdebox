@@ -16,9 +16,10 @@ class OnlineDataProcessor {
     // Functions
     
     // This function gets and stores data from the API in the local drive on the iPhone.
-    func storeData() {
-        if let imageUrl = foodsharingApiURL {
-            URLSession.shared.downloadTask(with: imageUrl) { (tempFileUrl, response, error) in
+    func getAndStoreData() {
+        if let foodsharingUrl = foodsharingApiURL {
+            print("Start connecting to Foodsharing e.V. API...")
+            URLSession.shared.downloadTask(with: foodsharingUrl) { (tempFileUrl, response, error) in
                 if let jsonTempFileUrl = tempFileUrl {
                     do {
                         // Write to file
@@ -34,12 +35,18 @@ class OnlineDataProcessor {
     }
     
     // Function to create a String from the stored data
-    func readData() {
+    func checkIfDataIsValid() -> Bool {
         do {
-            let markers = try String(contentsOf: self.documentDirectory)
-            print(markers)
+            let data = try Data(contentsOf: self.documentDirectory)
+            // Check the size of the data set (need to be bigger then 2.000 bytes)
+            if data.count < 2000 {
+                return false
+            } else {
+                return true
+            }
         } catch {
             print(error.localizedDescription)
+            return false
         }
     }
     

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Onboarding2View: View {
+    
+    let locationManager = LocationManager()
+    
     var body: some View {
         VStack {
             Spacer()
@@ -32,14 +35,19 @@ struct Onboarding2View: View {
                 .padding([.leading, .bottom, .trailing])
             
             NavigationLink(
-                destination: Onboarding3View(),
-                label: {
-                    PrimaryTextButton(buttonText:  NSLocalizedString("button_locationPermission", comment: ""))
-                }).padding(.bottom)
+                destination: Onboarding3View()) {
+                    PrimaryTextButton(buttonText: NSLocalizedString("button_locationPermission", comment: ""))
+                }
+                .padding(.bottom)
+        }
+        .onDisappear() {
+            locationManager.checkIfLocationServiceIsEnable()
         }
         .navigationBarHidden(true)
     }
 }
+
+
 
 struct Onboarding2_Previews: PreviewProvider {
     static var previews: some View {

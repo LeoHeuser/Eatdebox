@@ -98,10 +98,10 @@
 "becomeActive_footer" = "The project Eatdebox has nothing to do with the Foodsharing e.V. in the German-speaking area. We only aim at a similar goal.";
 
 /* (No Comment) */
-"alert_title" = "We are still in beta, guys";
+"alert_title" = "Error with data";
 
 /* (No Comment) */
-"alert_dataText1" = "I downloaded";
+"alert_dataText1" = "The data in the last download where incomplete or not valid to show on the map. Please try again.";
 
 /* (No Comment) */
-"alert_dataText2" = "bytes of data";
+"label_missingFeature" = "🚧 Feature under construction 🚧";
