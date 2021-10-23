@@ -14,7 +14,7 @@ import Foundation
     
     // Stuff that happens when the app is starting
     init() {
-
+        
     }
     
     // Main view and starting point

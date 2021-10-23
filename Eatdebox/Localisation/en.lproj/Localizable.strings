@@ -1,5 +1,8 @@
 /* (No Comment) */
-"foodbox" = "Foodbox ";
+"foodbox_spaceAfter" = "Foodbox ";
+
+/* (No Comment) */
+"foodbox_spaceBefore" = " Foodbox";
 
 /* (No Comment) */
 "eatdebox_appName" = "Eatdebox";
@@ -50,7 +53,7 @@
 "onboaring1_header" = "This is Eatdebox.";
 
 /* (No Comment) */
-"onboaring1_text" = "Find free food in your area to save it from the trash and save money. Foodboxes where you can share your food with others and take it if you need it.";
+"onboaring1_text" = "Find free food in your area to save it from the trash and save money. Foodboxes are distributors where you can share your food with others and take it if you need it.";
 
 /* (No Comment) */
 "onboaring2_header" = "Find the Foodboxes next to you.";
@@ -62,10 +65,7 @@
 "onboaring3_header" = "Houston, we have no problem.";
 
 /* (No Comment) */
-"onboaring3_text" = "The Foodboxe’s data is handpicked and embedded into the app. Therefore, you may not have all the Foodboxes on your radar right away. But we are working on it.";
-
-/* (No Comment) */
-"onboaring3_footnote" = "In a later update, the data will also be available in real time from the Foodsharing e.V. API. Look forward to it.";
+"onboaring3_text" = "Eatdebox downloads the positions of the food boxes of Foodsharing e.V.. These are public distributors all over Europe. Download the first time the dataset on the top right via the info-icon.";
 
 /* (No Comment) */
 "foodbox_id" = "Foodbox ID";
@@ -98,7 +98,7 @@
 "becomeActive_footer" = "The project Eatdebox has nothing to do with the Foodsharing e.V. in the German-speaking area. We only aim at a similar goal.";
 
 /* (No Comment) */
-"alert_title" = "Error with data";
+"alertLabel_errorDataDownload" = "Error with last download";
 
 /* (No Comment) */
 "alert_dataText1" = "The data in the last download where incomplete or not valid to show on the map. Please try again.";

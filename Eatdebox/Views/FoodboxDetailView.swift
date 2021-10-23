@@ -33,37 +33,37 @@ struct FoodboxDetailView: View {
     // View
     var body: some View {
         
-            List {
-                Section(header: Text("")) {
-                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_id", comment: ""), value: "\(foodbox_id)")
-                    
-                    StaticFoodboxParameterWithClipboard(parameter: NSLocalizedString("foodbox_address", comment: ""), value: foodboxAddress)
-                    
-                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_hostingType", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_missingFeature", comment: ""))")
-                    
-                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_lastActivity ?? NSLocalizedString("label_missingFeature", comment: ""))")
-                    
-                }
+        List {
+            Section(header: Text("")) {
+                StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_id", comment: ""), value: "\(foodbox_id)")
                 
-                Section(header: Text(NSLocalizedString("foodbox_header_description", comment: ""))) {
-                    Text(foodbox_description ?? NSLocalizedString("label_loading", comment: ""))
-                    
-                    Button {
-                        UIApplication.shared.open(URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
-                    } label: {
-                        Text(NSLocalizedString("button_foodsharingRulesAndTips", comment: ""))
-                    }
-                }
+                StaticFoodboxParameterWithClipboard(parameter: NSLocalizedString("foodbox_address", comment: ""), value: foodboxAddress)
+                
+                StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_hostingType", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_missingFeature", comment: ""))")
+                
+                StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_lastActivity ?? NSLocalizedString("label_missingFeature", comment: ""))")
                 
             }
-            .navigationBarTitle(NSLocalizedString("foodbox", comment: "") + (foodbox_streetname ?? String(foodbox_id)), displayMode: .inline)
-            .navigationBarItems(trailing:
-                                    Button {
-                UIApplication.shared.open(URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)")!)
-            } label: {
-                Image(systemName: "network")
+            
+            Section(header: Text(NSLocalizedString("foodbox_header_description", comment: ""))) {
+                Text(foodbox_description ?? NSLocalizedString("label_loading", comment: ""))
+                
+                Button {
+                    UIApplication.shared.open(URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
+                } label: {
+                    Text(NSLocalizedString("button_foodsharingRulesAndTips", comment: ""))
+                }
             }
-            )
+            
+        }
+        .navigationBarTitle(NSLocalizedString("foodbox_spaceAfter", comment: "") + (foodbox_streetname ?? String(foodbox_id)), displayMode: .inline)
+        .navigationBarItems(trailing:
+                                Button {
+            UIApplication.shared.open(URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)")!)
+        } label: {
+            Image(systemName: "network")
+        }
+        )
         
         .accentColor(Color("edb_red"))
         

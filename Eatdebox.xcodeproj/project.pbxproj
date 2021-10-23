@@ -20,7 +20,6 @@
 		7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */; };
 		7119F37626B21F8400F96863 /* CalculateNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37526B21F8400F96863 /* CalculateNavigation.swift */; };
 		7123329A26F50B3300581A34 /* Changelog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7123329926F50B3300581A34 /* Changelog.rtf */; };
-		7123329D26F5120200581A34 /* LondrinaSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* LondrinaSolid.ttf */; };
 		712FB395271DAE0D0002CA63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 712FB393271DAE0D0002CA63 /* InfoPlist.strings */; };
 		7139DA7B271DBCD60050F34F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7139DA7A271DBCD60050F34F /* SwiftSoup */; };
 		7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */; };
@@ -33,6 +32,7 @@
 		71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB526926D9867B00C850C7 /* LocationManager.swift */; };
 		71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D331DE26EE2FD800209365 /* Foodbox.swift */; };
 		71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */; };
+		71FF76792724A98100B05779 /* LondrinaSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* LondrinaSolid.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -241,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7123329D26F5120200581A34 /* LondrinaSolid.ttf in Resources */,
 				712FB395271DAE0D0002CA63 /* InfoPlist.strings in Resources */,
 				7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */,
 				7119F36126B1E08800F96863 /* Definitions.rtf in Resources */,
@@ -249,6 +248,7 @@
 				71606EF5271DA428002837D3 /* markers.json in Resources */,
 				7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */,
 				7123329A26F50B3300581A34 /* Changelog.rtf in Resources */,
+				71FF76792724A98100B05779 /* LondrinaSolid.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

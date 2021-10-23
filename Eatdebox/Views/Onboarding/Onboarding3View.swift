@@ -9,14 +9,15 @@ import SwiftUI
 
 struct Onboarding3View: View {
     
+    @AppStorage("hadOnboarding") var hadOnboarding: Bool = false
+    
     var body: some View {
         VStack {
             Spacer()
             
-            Image(systemName: "square.stack.3d.up")
+            Image("imgOnboardingDownload_See")
                 .resizable()
                 .scaledToFit()
-                .frame(maxWidth: 100)
                 .foregroundColor(Color("edb_green"))
             
             Text(NSLocalizedString("onboaring3_header", comment: ""))
@@ -31,11 +32,6 @@ struct Onboarding3View: View {
             Text(NSLocalizedString("onboaring3_text", comment: ""))
                 .multilineTextAlignment(.center)
                 .padding([.leading, .bottom, .trailing])
-            
-            Text(NSLocalizedString("onboaring3_footnote", comment: ""))
-                .font(.footnote)
-                .foregroundColor(Color("edb_darkGrey"))
-                .multilineTextAlignment(.center)
             
             NavigationLink(destination: MapView()) {
                     PrimaryTextButton(buttonText: NSLocalizedString("button_finish", comment: ""))

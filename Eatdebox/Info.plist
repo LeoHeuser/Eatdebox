@@ -26,7 +26,7 @@
 	<string>Eatdebox wants to access your current location while you use the app to show you Foodboxes in your area on the map.</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>LondrinaSolid.ttf</string>
+		<string>Fonts/LondrinaSolid.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

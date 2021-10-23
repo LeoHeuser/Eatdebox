@@ -1,8 +1,8 @@
 /* (No Comment) */
-"alert_text" = "Diese Funktion befindet sich derzeit noch in der Entwicklung. Komm später wieder.";
+"alert_dataText1" = "Die Daten im letzten Download waren unvollständig oder nicht gültig, um sie auf der Karte anzuzeigen. Bitte versuche es erneut.";
 
 /* (No Comment) */
-"alert_title" = "Wir sind noch in der Beta, Leute";
+"alertLabel_errorDataDownload" = "Fehler beim letzten Download";
 
 /* (No Comment) */
 "becomeActive_footer" = "Das Projekt Eatdebox hat nichts mit dem Foodsharing e.V. im deutschsprachigen Raum zu tun. Wir verfolgen nur ein ähnliches Ziel.";
@@ -47,9 +47,6 @@
 "eatdebox_appName" = "Eatdebox";
 
 /* (No Comment) */
-"foodbox" = "Foodbox ";
-
-/* (No Comment) */
 "foodbox_address" = "Adresse";
 
 /* (No Comment) */
@@ -65,6 +62,12 @@
 "foodbox_lastActivity" = "Letzte Aktivität";
 
 /* (No Comment) */
+"foodbox_spaceAfter" = "Foodbox ";
+
+/* (No Comment) */
+"foodbox_spaceBefore" = " Foodbox";
+
+/* (No Comment) */
 "label_about" = "Über die App";
 
 /* (No Comment) */
@@ -75,6 +78,12 @@
 
 /* (No Comment) */
 "label_loading" = "Daten werden geladen...";
+
+/* (No Comment) */
+"label_loadingAddress" = "Daten werden geladen...";
+
+/* (No Comment) */
+"label_missingFeature" = "🚧 Feature in Arbeit 🚧";
 
 /* (No Comment) */
 "madeWithLove" = "Entwickelt mit ❤️ zur Bekämpfung von Lebensmittelverschwendung";
@@ -92,13 +101,8 @@
 "onboaring2_text" = "Eatdebox möchte den Standort deines iPhones nutzen, während du die App verwendest. Dein Standort hilft dabei, Foodboxes in deiner Nähe anzuzeigen.";
 
 /* (No Comment) */
-"onboaring3_footnote" = "In einem späteren Update werden die Daten auch in Echtzeit über die Foodsharing e.V. API verfügbar sein. Freue dich darauf.";
-
-/* (No Comment) */
 "onboaring3_header" = "Houston, wir haben kein Problem.";
 
 /* (No Comment) */
-"onboaring3_text" = "Die Daten der Foodboxe sind handverlesen und in die App integriert. Daher kann es sein, dass du nicht alle Foodboxen sofort auf deinem Radar hast. Aber wir arbeiten daran.";
+"onboaring3_text" = "Eatdebox lädt die Positionen der Foodboxen von Foodsharing e.V. herunter. Das sind öffentliche Verteiler in ganz Europa. Lade dir das das erste mal das Datenset oben rechts über das info-Icon herunter.";
 
-/* (No Comment) */
-"label_missingFeature" = "🚧 Feature in Arbeit 🚧";

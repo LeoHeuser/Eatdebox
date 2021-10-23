@@ -28,16 +28,16 @@ struct AboutView: View {
             Button {
                 DispatchQueue.global(qos: .default).async {
                     downloadButtonDisbaled.toggle()
-                    foodboxCount = "Downloading Foodboxes..."
+                    foodboxCount = NSLocalizedString("label_loading", comment: "")
                     onlineDataProcessor.getAndStoreData()
                     sleep(3)
                     
                     // Checks if the new data are valid
                     if onlineDataProcessor.checkIfDataIsValid() {
-                        foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + " Foodboxes"
+                        foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + NSLocalizedString("foodbox_spaceBefore", comment: "")
                     } else {
                         showDownloadErrorAlert = true
-                        foodboxCount = "Error with last download"
+                        foodboxCount = NSLocalizedString("alertLabel_errorDataDownload", comment: "")
                     }
                     downloadButtonDisbaled.toggle()
                 }
@@ -46,7 +46,7 @@ struct AboutView: View {
             }
             .disabled(downloadButtonDisbaled)
             .alert(isPresented: $showDownloadErrorAlert) {
-                Alert(title: Text(NSLocalizedString("alert_title", comment: "")), message: Text(NSLocalizedString("alert_dataText1", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
+                Alert(title: Text(NSLocalizedString("alertLabel_errorDataDownload", comment: "")), message: Text(NSLocalizedString("alert_dataText1", comment: "")), dismissButton: .default(Text(NSLocalizedString("button_close", comment: ""))))
             }
             
             
@@ -60,7 +60,7 @@ struct AboutView: View {
             }
         }
         .onAppear() {
-            foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + " Foodboxes"
+            foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + NSLocalizedString("foodbox_spaceBefore", comment: "")
         }
         Text(NSLocalizedString("madeWithLove", comment: ""))
             .multilineTextAlignment(.center)

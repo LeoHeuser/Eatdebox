@@ -16,6 +16,7 @@ struct MapView: View {
     @State private var foodboxData:[Foodbox] = []
     
     var offlineDataProcessor = OfflineDataProcessor()
+    var onlineDataProcessor = OnlineDataProcessor()
     
     var body: some View {
         NavigationView {
@@ -36,8 +37,13 @@ struct MapView: View {
                 }
                 .onAppear(){
                     DispatchQueue.global(qos: .userInitiated).async {
-                        // Load the data from local file
-                        foodboxData = offlineDataProcessor.loadOfflineJSON()
+                        if onlineDataProcessor.checkIfDataIsValid() == false {
+                            // Do something if no valid data are here
+                            print("Found no valid data!")
+                        } else {
+                            // Load the data from local file
+                            foodboxData = offlineDataProcessor.loadOfflineJSON()
+                        }
                     }
                 }
                 .accentColor(Color("edb_green"))
@@ -70,7 +76,6 @@ struct MapView: View {
         }
         .accentColor(Color("edb_red"))
         .onAppear(){
-            
             hadOnboarding = true
             locationManager.checkIfLocationServiceIsEnable()
         }
