@@ -26,6 +26,7 @@
 		71606EF0271D9025002837D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71606EF2271D9025002837D3 /* Localizable.strings */; };
 		71606EF5271DA428002837D3 /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 71606EF4271DA428002837D3 /* markers.json */; };
 		717E2F2526B3058F00210163 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E2F2426B3058F00210163 /* AboutView.swift */; };
+		717E906427290F9400F425D2 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E906327290F9400F425D2 /* ServiceView.swift */; };
 		717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F326B32FB400958B58 /* Onboarding3View.swift */; };
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
 		71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */; };
@@ -58,6 +59,7 @@
 		71606EF3271D9063002837D3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		71606EF4271DA428002837D3 /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = markers.json; sourceTree = "<group>"; };
 		717E2F2426B3058F00210163 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		717E906327290F9400F425D2 /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
 		717EB7F126B3147800958B58 /* LondrinaSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LondrinaSolid.ttf; path = Eatdebox/fonts/LondrinaSolid.ttf; sourceTree = SOURCE_ROOT; };
 		717EB7F326B32FB400958B58 /* Onboarding3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				7119F34D26B1D9FA00F96863 /* MapView.swift */,
 				7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */,
 				717E2F2426B3058F00210163 /* AboutView.swift */,
+				717E906327290F9400F425D2 /* ServiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				7119F36C26B20F5600F96863 /* FoodboxDetailView.swift in Sources */,
 				717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */,
 				71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */,
+				717E906427290F9400F425D2 /* ServiceView.swift in Sources */,
 				71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = edb_red;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
 				DEVELOPMENT_TEAM = 8C7WM5V4Q4;
 				ENABLE_PREVIEWS = YES;
@@ -450,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = edb_red;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
 				DEVELOPMENT_TEAM = 8C7WM5V4Q4;
 				ENABLE_PREVIEWS = YES;

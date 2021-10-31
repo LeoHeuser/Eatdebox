@@ -1,8 +1,8 @@
 /* (No Comment) */
-"foodbox_spaceAfter" = "Foodbox ";
+"foodbox_spaceAfter" = "Foodboxes ";
 
 /* (No Comment) */
-"foodbox_spaceBefore" = " Foodbox";
+"foodbox_spaceBefore" = " Foodboxes";
 
 /* (No Comment) */
 "eatdebox_appName" = "Eatdebox";
@@ -14,7 +14,7 @@
 "label_loadingAddress" = "Loading data...\n\n";
 
 /* (No Comment) */
-"madeWithLove" = "Made with ❤️ to fight against food waste";
+"madeWithLove" = "Made with ❤️ against food waste in version ";
 
 /* (No Comment) */
 "button_close" = "Close";
@@ -105,3 +105,12 @@
 
 /* (No Comment) */
 "label_missingFeature" = "🚧 Feature under construction 🚧";
+
+/* (No Comment) */
+"label_chooseToolToNavigate" = "Choose the app to navigate";
+
+/* (No Comment) */
+"label_AppleMaps" = "Apple Maps";
+
+/* (No Comment) */
+"label_GoogleMaps" = "Google Maps";

@@ -62,10 +62,10 @@
 "foodbox_lastActivity" = "Letzte Aktivität";
 
 /* (No Comment) */
-"foodbox_spaceAfter" = "Foodbox ";
+"foodbox_spaceAfter" = "Foodboxen ";
 
 /* (No Comment) */
-"foodbox_spaceBefore" = " Foodbox";
+"foodbox_spaceBefore" = " Foodboxen";
 
 /* (No Comment) */
 "label_about" = "Über die App";
@@ -86,7 +86,7 @@
 "label_missingFeature" = "🚧 Feature in Arbeit 🚧";
 
 /* (No Comment) */
-"madeWithLove" = "Entwickelt mit ❤️ zur Bekämpfung von Lebensmittelverschwendung";
+"madeWithLove" = "Entwickelt mit ❤️ gegen Lebensmittelverschwendung in der Version ";
 
 /* (No Comment) */
 "onboaring1_header" = "Das ist Eatdebox.";
@@ -106,3 +106,11 @@
 /* (No Comment) */
 "onboaring3_text" = "Eatdebox lädt die Positionen der Foodboxen von Foodsharing e.V. herunter. Das sind öffentliche Verteiler in ganz Europa. Lade dir das das erste mal das Datenset oben rechts über das info-Icon herunter.";
 
+/* (No Comment) */
+"label_chooseToolToNavigate" = "Wähle die App zum Navigieren";
+
+/* (No Comment) */
+"label_AppleMaps" = "Apple Maps";
+
+/* (No Comment) */
+"label_GoogleMaps" = "Google Maps";
