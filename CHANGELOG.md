@@ -1,9 +1,21 @@
 This is the Eatdebox changelog.
 
-0.6.1
-(1) Released on 17.09.2021
-	⁃	Optimisation for the location manager to stop updating the location (energy saving)
-	⁃	Adjustments of the texts in the onboarding
+<p>
+	0.6.1<br>
+	(1) Released on 17.09.2021
+	<ul>
+  		<li>Optimisation for the location manager to stop updating the location (energy saving)</li>
+  		<li>Adjustments of the texts in the onboarding</li>
+	</ul>
+</p>
+
+<p>
+	0.6.2<br>
+	(1) Released on 26.09.2021
+	<ul>
+		<li>Minor adjustments to iOS 15.0</li>
+	</ul>
+</p>
 
 0.6.2
 (1) Released on 26.09.2021
