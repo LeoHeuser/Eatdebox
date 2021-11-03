@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct FoodboxMapMarker: View {
+struct FoodboxMapMarker: View, Identifiable {
+    var id = UUID()
+    var clusteringIdentifier: String? = "lol"
     
     var markerDimension = CGFloat(45)
     

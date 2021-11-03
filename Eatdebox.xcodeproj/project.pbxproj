@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7119F34C26B1D9FA00F96863 /* EatdeboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F34B26B1D9FA00F96863 /* EatdeboxApp.swift */; };
-		7119F34E26B1D9FA00F96863 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F34D26B1D9FA00F96863 /* MapView.swift */; };
+		7119F34E26B1D9FA00F96863 /* FoodboxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */; };
 		7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7119F34F26B1D9FC00F96863 /* Assets.xcassets */; };
 		7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7119F35226B1D9FC00F96863 /* Preview Assets.xcassets */; };
 		7119F36126B1E08800F96863 /* Definitions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7119F36026B1E08800F96863 /* Definitions.rtf */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		7119F34826B1D9FA00F96863 /* Eatdebox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatdebox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7119F34B26B1D9FA00F96863 /* EatdeboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatdeboxApp.swift; sourceTree = "<group>"; };
-		7119F34D26B1D9FA00F96863 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxMapView.swift; sourceTree = "<group>"; };
 		7119F34F26B1D9FC00F96863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7119F35226B1D9FC00F96863 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7119F35426B1D9FC00F96863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				7119F37026B2164B00F96863 /* Onboarding */,
-				7119F34D26B1D9FA00F96863 /* MapView.swift */,
+				7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */,
 				7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */,
 				717E2F2426B3058F00210163 /* AboutView.swift */,
 				717E906327290F9400F425D2 /* ServiceView.swift */,
@@ -265,7 +265,7 @@
 				71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */,
 				7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */,
 				717E2F2526B3058F00210163 /* AboutView.swift in Sources */,
-				7119F34E26B1D9FA00F96863 /* MapView.swift in Sources */,
+				7119F34E26B1D9FA00F96863 /* FoodboxMapView.swift in Sources */,
 				7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */,
 				71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */,
 				7119F34C26B1D9FA00F96863 /* EatdeboxApp.swift in Sources */,

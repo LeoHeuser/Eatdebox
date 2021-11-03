@@ -33,7 +33,7 @@ struct Onboarding3View: View {
                 .multilineTextAlignment(.center)
                 .padding([.leading, .bottom, .trailing])
             
-            NavigationLink(destination: MapView()) {
+            NavigationLink(destination: FoodboxMapView()) {
                     PrimaryTextButton(buttonText: NSLocalizedString("button_finish", comment: ""))
                 }
                 .padding(.bottom)

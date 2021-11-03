@@ -22,7 +22,7 @@ import Foundation
         WindowGroup {
             VStack{
                 if (hadOnboarding) {
-                    MapView()
+                    FoodboxMapView()
                 } else {
                     Onboarding1View()
                 }

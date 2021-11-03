@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct MapView: View {
+struct FoodboxMapView: View {
     @AppStorage("hadOnboarding") var hadOnboarding:Bool = false
     
     @StateObject private var locationManager = LocationManager()
@@ -86,6 +86,6 @@ struct MapView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        FoodboxMapView()
     }
 }
