@@ -6,6 +6,7 @@
 		<li>You can now choose between Apple Maps and Google Maps when you start a navigation to a Foodbox</li>
 		<li>The version number is now part of the bottom message in the AboutView to provide space for more relevant content</li>
 		<li>Added the section of "Acknowledgements" for used libraries within the Eatdebox project</li>
+        <li>Fix of smaller typos</li>      
 	</ul>
 	(1) Released on 24.10.2021
 	<ul>
