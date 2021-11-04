@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710A368E2734655000706515 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 710A368D2734655000706515 /* CHANGELOG.md */; };
+		710A36902734657C00706515 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 710A368F2734657C00706515 /* README.md */; };
 		7119F34C26B1D9FA00F96863 /* EatdeboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F34B26B1D9FA00F96863 /* EatdeboxApp.swift */; };
 		7119F34E26B1D9FA00F96863 /* FoodboxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */; };
 		7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7119F34F26B1D9FC00F96863 /* Assets.xcassets */; };
@@ -19,7 +21,6 @@
 		7119F36F26B2151B00F96863 /* FoodboxMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */; };
 		7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */; };
 		7119F37626B21F8400F96863 /* CalculateNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119F37526B21F8400F96863 /* CalculateNavigation.swift */; };
-		7123329A26F50B3300581A34 /* Changelog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7123329926F50B3300581A34 /* Changelog.rtf */; };
 		712FB395271DAE0D0002CA63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 712FB393271DAE0D0002CA63 /* InfoPlist.strings */; };
 		7139DA7B271DBCD60050F34F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7139DA7A271DBCD60050F34F /* SwiftSoup */; };
 		7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710A368D2734655000706515 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		710A368F2734657C00706515 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7119F34826B1D9FA00F96863 /* Eatdebox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatdebox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7119F34B26B1D9FA00F96863 /* EatdeboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatdeboxApp.swift; sourceTree = "<group>"; };
 		7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxMapView.swift; sourceTree = "<group>"; };
@@ -51,7 +54,6 @@
 		7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxMapMarker.swift; sourceTree = "<group>"; };
 		7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFoodboxParameter.swift; sourceTree = "<group>"; };
 		7119F37526B21F8400F96863 /* CalculateNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateNavigation.swift; sourceTree = "<group>"; };
-		7123329926F50B3300581A34 /* Changelog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Changelog.rtf; sourceTree = "<group>"; };
 		712FB394271DAE0D0002CA63 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Annual Self Classification Report (2021).numbers"; sourceTree = "<group>"; };
 		7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDataProcessor.swift; sourceTree = "<group>"; };
@@ -84,6 +86,8 @@
 		7119F33F26B1D9F900F96863 = {
 			isa = PBXGroup;
 			children = (
+				710A368F2734657C00706515 /* README.md */,
+				710A368D2734655000706515 /* CHANGELOG.md */,
 				7119F34A26B1D9FA00F96863 /* Eatdebox */,
 				7119F34926B1D9FA00F96863 /* Products */,
 			);
@@ -116,7 +120,6 @@
 				71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */,
 				71606EF4271DA428002837D3 /* markers.json */,
 				7119F36026B1E08800F96863 /* Definitions.rtf */,
-				7123329926F50B3300581A34 /* Changelog.rtf */,
 				712FB396271DAED80002CA63 /* Localisation */,
 			);
 			path = Eatdebox;
@@ -246,11 +249,12 @@
 			files = (
 				712FB395271DAE0D0002CA63 /* InfoPlist.strings in Resources */,
 				7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */,
+				710A36902734657C00706515 /* README.md in Resources */,
 				7119F36126B1E08800F96863 /* Definitions.rtf in Resources */,
 				71606EF0271D9025002837D3 /* Localizable.strings in Resources */,
 				71606EF5271DA428002837D3 /* markers.json in Resources */,
 				7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */,
-				7123329A26F50B3300581A34 /* Changelog.rtf in Resources */,
+				710A368E2734655000706515 /* CHANGELOG.md in Resources */,
 				71FF76792724A98100B05779 /* LondrinaSolid.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
