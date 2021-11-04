@@ -34,9 +34,9 @@ struct Onboarding3View: View {
                 .padding([.leading, .bottom, .trailing])
             
             NavigationLink(destination: FoodboxMapView()) {
-                    PrimaryTextButton(buttonText: NSLocalizedString("button_finish", comment: ""))
-                }
-                .padding(.bottom)
+                PrimaryTextButton(buttonText: NSLocalizedString("button_finish", comment: ""))
+            }
+            .padding(.bottom)
         }
         .navigationBarHidden(true)
     }

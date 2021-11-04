@@ -40,7 +40,6 @@ struct Onboarding1View: View {
                 .padding(.bottom)
             }
         }
-        .navigationBarHidden(true)
     }
 }
 
