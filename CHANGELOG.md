@@ -3,6 +3,9 @@
     (3) Currently under development 🚧
     <ul>
         <li>Minor adjustments to the Eatdebox app to help you save food even better</li>
+        <li>Smaller navigation bar in the MapView to provide more space for the map annotations</li>
+        <li>Add used Fonts and Icons to the view of acknowledgements</li>
+        <li>Adjusting the dark appearance of the Eatdebox red for better contrast</li>
     </ul>
 	(2) Released on 04.11.2021
 	<ul>
