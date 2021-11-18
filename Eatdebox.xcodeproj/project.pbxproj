@@ -32,6 +32,7 @@
 		717EB7F426B32FB400958B58 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F326B32FB400958B58 /* Onboarding3View.swift */; };
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
 		71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */; };
+		71B3722F27464B390081469D /* ClusterMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3722E27464B390081469D /* ClusterMapMarker.swift */; };
 		71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB526926D9867B00C850C7 /* LocationManager.swift */; };
 		71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D331DE26EE2FD800209365 /* Foodbox.swift */; };
 		71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */; };
@@ -68,6 +69,7 @@
 		717EB7F326B32FB400958B58 /* Onboarding3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
 		71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDataScraper.swift; sourceTree = "<group>"; };
+		71B3722E27464B390081469D /* ClusterMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterMapMarker.swift; sourceTree = "<group>"; };
 		71CB526926D9867B00C850C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		71D331DE26EE2FD800209365 /* Foodbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodbox.swift; sourceTree = "<group>"; };
 		71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineDataProcessor.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				713548ED273B09C7002C4793 /* AcknowledgementSwiftUIElement.swift */,
 				717EB7F526B3314200958B58 /* SecondaryButtons.swift */,
 				7119F36E26B2151B00F96863 /* FoodboxMapMarker.swift */,
+				71B3722E27464B390081469D /* ClusterMapMarker.swift */,
 				7119F37326B21B2200F96863 /* StaticFoodboxParameter.swift */,
 			);
 			path = "UI Elements";
@@ -280,6 +283,7 @@
 				7119F36626B2005A00F96863 /* Onboarding1View.swift in Sources */,
 				7119F37626B21F8400F96863 /* CalculateNavigation.swift in Sources */,
 				7119F36A26B2056800F96863 /* Onboarding2View.swift in Sources */,
+				71B3722F27464B390081469D /* ClusterMapMarker.swift in Sources */,
 				717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */,
 				7119F36326B1F33800F96863 /* PrimaryButtons.swift in Sources */,
 				7119F36C26B20F5600F96863 /* FoodboxDetailView.swift in Sources */,

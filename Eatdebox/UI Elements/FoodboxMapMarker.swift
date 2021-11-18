@@ -9,22 +9,22 @@ import SwiftUI
 
 struct FoodboxMapMarker: View, Identifiable {
     var id = UUID()
-    var clusteringIdentifier: String? = "lol"
-    
     var markerDimension = CGFloat(45)
     
     var body: some View {
-        ZStack {
-            Circle()
-                .foregroundColor(Color(.systemBackground))
-                .shadow(color: Color(.tertiaryLabel), radius: 4, x: 0, y: 2)
-            Circle()
-                .padding(5)
-                .foregroundColor(Color("edb_red"))
-            Image(systemName: "leaf")
-                .foregroundColor(Color(.systemBackground))
+        VStack(spacing: 0) {
+            ZStack {
+                Circle()
+                    .frame(width: markerDimension, height: markerDimension)
+                Image(systemName: "leaf")
+                    .foregroundColor(Color(.systemBackground))
+            }
+            Image(systemName: "arrowtriangle.down.fill")
+                .resizable()
+                .frame(width: markerDimension-20, height: markerDimension-20)
+                .offset(x: 0, y: -15)
         }
-        .frame(width: markerDimension, height: markerDimension)
+        .foregroundColor(Color("edb_red"))
     }
 }
 
@@ -32,6 +32,5 @@ struct MapMarker_Previews: PreviewProvider {
     static var previews: some View {
         FoodboxMapMarker()
             .previewLayout(.sizeThatFits)
-        
     }
 }
