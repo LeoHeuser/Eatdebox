@@ -1,13 +1,18 @@
-<h3>0.8.0</h3>
+<h3>0.8.1</h3>
 <p>
-    (3) Currently under development 🚧
+    (1) Currently under development 🚧
     <ul>
         <li>Minor adjustments to the Eatdebox app to help you save food even better</li>
         <li>Smaller navigation bar in the MapView to provide more space for the map annotations</li>
         <li>Add used Fonts and Icons to the view of acknowledgements</li>
         <li>Adjusting the dark appearance of the Eatdebox red for better contrast</li>
         <li>New annotations for Foodboxes on the map</li>
+        <li>Download of the Foodboxes is now part of the onboarding (BETA)</li>
     </ul>
+</p>
+
+<h3>0.8.0</h3>
+<p>
 	(2) Released on 04.11.2021
 	<ul>
 		<li>Small adjustments with the Strings in German and English and fixed typos</li>

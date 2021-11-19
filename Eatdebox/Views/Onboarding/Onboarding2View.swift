@@ -35,7 +35,7 @@ struct Onboarding2View: View {
                 .padding([.leading, .bottom, .trailing])
             
             NavigationLink(
-                destination: Onboarding3View()) {
+                destination: Onboarding3DownloadFoodboxes()) {
                     PrimaryTextButton(buttonText: NSLocalizedString("button_locationPermission", comment: ""))
                 }
                 .padding(.bottom)
