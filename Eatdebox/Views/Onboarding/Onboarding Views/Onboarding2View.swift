@@ -8,42 +8,38 @@
 import SwiftUI
 
 struct Onboarding2View: View {
-    
     let locationManager = LocationManager()
     
     var body: some View {
-        VStack {
-            Spacer()
-            
-            Image(systemName: "location")
-                .resizable()
-                .scaledToFit()
-                .frame(maxWidth: 100)
+        VStack(spacing: 20) {
+            Image(systemName: "location.viewfinder")
+                .font(.system(size: 150, weight: .regular, design: .default))
                 .foregroundColor(Color("edb_green"))
+                .frame(maxWidth: .infinity, maxHeight: 300)
+            
+            Spacer()
             
             Text(NSLocalizedString("onboaring2_header", comment: ""))
                 .font(.largeTitle)
-                .fontWeight(.bold)
                 .multilineTextAlignment(.center)
-                .padding(.bottom)
-                .foregroundColor(Color("edb_green"))
-            
-            Spacer()
+                .padding(.horizontal)
             
             Text(NSLocalizedString("onboaring2_text", comment: ""))
+                .font(.title2)
                 .multilineTextAlignment(.center)
-                .padding([.leading, .bottom, .trailing])
+                .padding(.horizontal)
             
-            NavigationLink(
-                destination: Onboarding3DownloadFoodboxes()) {
-                    PrimaryTextButton(buttonText: NSLocalizedString("button_locationPermission", comment: ""))
-                }
-                .padding(.bottom)
+            Button {
+                locationManager.checkIfLocationServiceIsEnable()
+            }  label: {
+                PrimaryTextButton(buttonText: NSLocalizedString("button_locationPermission", comment: ""))
+            }
+            
+            Spacer()
+                .frame(height: 50)
         }
-        .onDisappear() {
-            locationManager.checkIfLocationServiceIsEnable()
-        }
-        .navigationBarHidden(true)
+        .frame(maxHeight: .infinity, alignment: .top)
+        .clipped()
     }
 }
 

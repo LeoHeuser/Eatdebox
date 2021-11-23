@@ -24,7 +24,8 @@ import Foundation
                 if (hadOnboarding) {
                     FoodboxMapView()
                 } else {
-                    Onboarding1View()
+//                    Onboarding1View()
+                    OnboardingTabView()
                 }
             }
         }

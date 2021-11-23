@@ -32,7 +32,8 @@
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
 		71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */; };
 		71B3722F27464B390081469D /* ClusterMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3722E27464B390081469D /* ClusterMapMarker.swift */; };
-		71B372312746D0D40081469D /* Onboarding3DownloadFoodboxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B372302746D0D40081469D /* Onboarding3DownloadFoodboxes.swift */; };
+		71B372312746D0D40081469D /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B372302746D0D40081469D /* Onboarding3View.swift */; };
+		71BBED7D27496A180030FB62 /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBED7C27496A180030FB62 /* OnboardingTabView.swift */; };
 		71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB526926D9867B00C850C7 /* LocationManager.swift */; };
 		71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D331DE26EE2FD800209365 /* Foodbox.swift */; };
 		71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */; };
@@ -69,7 +70,8 @@
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
 		71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDataScraper.swift; sourceTree = "<group>"; };
 		71B3722E27464B390081469D /* ClusterMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterMapMarker.swift; sourceTree = "<group>"; };
-		71B372302746D0D40081469D /* Onboarding3DownloadFoodboxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3DownloadFoodboxes.swift; sourceTree = "<group>"; };
+		71B372302746D0D40081469D /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
+		71BBED7C27496A180030FB62 /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
 		71CB526926D9867B00C850C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		71D331DE26EE2FD800209365 /* Foodbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodbox.swift; sourceTree = "<group>"; };
 		71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineDataProcessor.swift; sourceTree = "<group>"; };
@@ -153,7 +155,7 @@
 		7119F36D26B214CE00F96863 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7119F37026B2164B00F96863 /* Onboarding */,
+				71BBED7B27496A030030FB62 /* Onboarding */,
 				7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */,
 				7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */,
 				717E2F2426B3058F00210163 /* AboutView.swift */,
@@ -162,14 +164,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		7119F37026B2164B00F96863 /* Onboarding */ = {
+		7119F37026B2164B00F96863 /* Onboarding Views */ = {
 			isa = PBXGroup;
 			children = (
 				7119F36526B2005A00F96863 /* Onboarding1View.swift */,
 				7119F36926B2056800F96863 /* Onboarding2View.swift */,
-				71B372302746D0D40081469D /* Onboarding3DownloadFoodboxes.swift */,
+				71B372302746D0D40081469D /* Onboarding3View.swift */,
 			);
-			path = Onboarding;
+			path = "Onboarding Views";
 			sourceTree = "<group>";
 		};
 		712FB396271DAED80002CA63 /* Localisation */ = {
@@ -187,6 +189,15 @@
 				717EB7F126B3147800958B58 /* LondrinaSolid.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		71BBED7B27496A030030FB62 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				71BBED7C27496A180030FB62 /* OnboardingTabView.swift */,
+				7119F37026B2164B00F96863 /* Onboarding Views */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 				71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */,
 				7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */,
 				717E2F2526B3058F00210163 /* AboutView.swift in Sources */,
+				71BBED7D27496A180030FB62 /* OnboardingTabView.swift in Sources */,
 				7119F34E26B1D9FA00F96863 /* FoodboxMapView.swift in Sources */,
 				7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */,
 				71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */,
@@ -289,7 +301,7 @@
 				7119F36C26B20F5600F96863 /* FoodboxDetailView.swift in Sources */,
 				713548EE273B09C7002C4793 /* AcknowledgementSwiftUIElement.swift in Sources */,
 				71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */,
-				71B372312746D0D40081469D /* Onboarding3DownloadFoodboxes.swift in Sources */,
+				71B372312746D0D40081469D /* Onboarding3View.swift in Sources */,
 				717E906427290F9400F425D2 /* ServiceView.swift in Sources */,
 				71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */,
 			);
@@ -452,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.0;
+				MARKETING_VERSION = 0.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.heuser.Eatdebox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -476,7 +488,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.0;
+				MARKETING_VERSION = 0.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.heuser.Eatdebox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
