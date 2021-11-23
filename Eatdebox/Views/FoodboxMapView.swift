@@ -21,18 +21,16 @@ struct FoodboxMapView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: foodboxData)
-                { foodbox in
+                Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: foodboxData) { foodbox in
                     MapAnnotation(coordinate: foodbox.coordinate) {
-                        Button {
-                            self.foodboxItem = foodbox
-                            // Open the sheet view with a haptic feedback
-                            let hapticFeedback = UIImpactFeedbackGenerator(style: .medium)
-                            hapticFeedback.prepare()
-                            hapticFeedback.impactOccurred()
-                        } label: {
-                            FoodboxMapMarker()
-                        }
+                        FoodboxMapMarker()
+                            .onTapGesture() {
+                                self.foodboxItem = foodbox
+                                // Open the sheet view with a haptic feedback
+                                let hapticFeedback = UIImpactFeedbackGenerator(style: .medium)
+                                hapticFeedback.prepare()
+                                hapticFeedback.impactOccurred()
+                            }
                     }
                 }
                 .onAppear(){
@@ -65,7 +63,7 @@ struct FoodboxMapView: View {
                         .frame(width: 90.0)
                     }
                 }
-                .padding(.bottom)
+                .padding(.bottom, 50)
             }
             .navigationBarTitle(NSLocalizedString("eatdebox_appName", comment: ""), displayMode: .inline)
             .navigationBarItems(trailing:

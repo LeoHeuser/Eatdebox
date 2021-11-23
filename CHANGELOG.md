@@ -8,6 +8,8 @@
         <li>Adjusting the dark appearance of the Eatdebox red for better contrast</li>
         <li>New annotations for Foodboxes on the map</li>
         <li>Download of the Foodboxes is now part of the onboarding (BETA)</li>
+        <li>You can now skip the onboarding with a button in the upper right corner</li>
+        <li>New function to handle taps on map annotations</li>
     </ul>
 </p>
 

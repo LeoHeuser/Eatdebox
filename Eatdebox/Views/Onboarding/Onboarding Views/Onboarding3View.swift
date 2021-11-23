@@ -10,6 +10,7 @@ import SwiftUI
 struct Onboarding3View: View {
     var onlineDataProcessor = OnlineDataProcessor()
     var offlineDataProcessor = OfflineDataProcessor()
+    @State private var mainImage = "arrow.down.circle"
     @State private var dataHere = false
     @State private var downloadButtonDisabled = false
     @State private var isLoading = false
@@ -17,17 +18,28 @@ struct Onboarding3View: View {
     var body: some View {
         VStack(spacing: 20) {
             ZStack{
-                Image(systemName: "arrow.down.circle")
-                    .font(.system(size: 150, weight: .regular, design: .default))
-                    .foregroundColor(Color("edb_green"))
-                    .frame(maxWidth: .infinity, maxHeight: 300)
+                if isLoading {
+                    ProgressView()
+                        .frame(maxWidth: .infinity, maxHeight: 300)
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color("edb_green")))
+                } else {
+                    Image(systemName: mainImage)
+                        .font(.system(size: 150, weight: .regular, design: .default))
+                        .foregroundColor(Color("edb_green"))
+                        .frame(maxWidth: .infinity, maxHeight: 300)
+                }
             }
             Spacer()
-            if isLoading {
-                ProgressView()
-                    .frame(maxWidth: .infinity, maxHeight: 300)
-                    .progressViewStyle(CircularProgressViewStyle(tint: Color("edb_green")))
-            }
+            
+            Text(NSLocalizedString("onboaring3_header", comment: ""))
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
+            
+            Text(NSLocalizedString("onboaring3_text", comment: ""))
+                .font(.title2)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
             
             if dataHere {
                 // If data are there
@@ -36,26 +48,26 @@ struct Onboarding3View: View {
                 }
             } else {
                 Button {
-                    print("I was pressed")
-                    downloadButtonDisabled = true
-//                    downloadButtonDisabled.toggle()
-//                    isLoading.toggle()
-//                    DispatchQueue.global(qos: .default).async {
-//                        onlineDataProcessor.getAndStoreData()
-//                        sleep(3)
-//
-//                        // Checks if the new data are valid
-//                        if onlineDataProcessor.checkIfDataIsValid() {
-//                            // mainMessage = "Now you have " + String(offlineDataProcessor.loadOfflineJSON().count) + " Foodboxes"
-//                            dataHere = true
-//                        } else {
-//                            dataHere = false
-//                        }
-//                        isLoading.toggle()
-//                        downloadButtonDisabled.toggle()
-//                    }
+                    downloadButtonDisabled.toggle()
+                    isLoading.toggle()
+                    DispatchQueue.global(qos: .default).async {
+                        onlineDataProcessor.getAndStoreData()
+                        sleep(3)
+                        
+                        // Checks if the new data are valid
+                        if onlineDataProcessor.checkIfDataIsValid() {
+                            // mainMessage = "Now you have " + String(offlineDataProcessor.loadOfflineJSON().count) + " Foodboxes"
+                            mainImage = "hand.thumbsup"
+                            dataHere = true
+                        } else {
+                            mainImage = "xmark.octagon"
+                            dataHere = false
+                        }
+                        isLoading.toggle()
+                        downloadButtonDisabled.toggle()
+                    }
                 } label: {
-                    PrimaryTextButton(buttonText: "Download latest Foodboxes")
+                    PrimaryTextButton(buttonText: NSLocalizedString("button_downloadFoodboxes", comment: ""))
                 }
                 .disabled(downloadButtonDisabled)
             }
@@ -63,7 +75,6 @@ struct Onboarding3View: View {
             Spacer()
                 .frame(height: 50)
         }
-        .navigationBarHidden(true)
         .frame(maxHeight: .infinity, alignment: .top)
         .clipped()
     }

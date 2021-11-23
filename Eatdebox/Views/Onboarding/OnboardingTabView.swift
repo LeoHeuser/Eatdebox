@@ -15,9 +15,14 @@ struct OnboardingTabView: View {
                 Onboarding2View()
                 Onboarding3View()
             }
-            .navigationBarHidden(true)
+            //.navigationBarHidden(true)
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            .navigationBarItems(trailing:
+                                    NavigationLink(destination: FoodboxMapView()) {
+                Text(NSLocalizedString("label_skip", comment: ""))
+            }
+            )
         }
     }
 }
