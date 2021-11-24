@@ -1,5 +1,10 @@
 <h3>0.8.1</h3>
 <p>
+    (2) Currently under development 🚧
+    <ul>
+        <li>A button next to the used libraries to get more information</li>
+        <li>Custom font headers in the navigation bars</li>
+    </ul>
     (1) Currently under development 🚧
     <ul>
         <li>Minor adjustments to the Eatdebox app to help you save food even better</li>

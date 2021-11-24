@@ -20,7 +20,7 @@ struct Onboarding2View: View {
             Spacer()
             
             Text(NSLocalizedString("onboaring2_header", comment: ""))
-                .font(.largeTitle)
+                .font(Font.custom("Londrina Solid", size: 32, relativeTo: .largeTitle))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
             

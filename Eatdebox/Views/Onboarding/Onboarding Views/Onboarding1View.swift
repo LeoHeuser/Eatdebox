@@ -18,7 +18,7 @@ struct Onboarding1View: View {
             Spacer()
             
             Text(NSLocalizedString("onboaring1_header", comment: ""))
-                .font(.largeTitle)
+                .font(Font.custom("Londrina Solid", size: 32, relativeTo: .largeTitle))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
             

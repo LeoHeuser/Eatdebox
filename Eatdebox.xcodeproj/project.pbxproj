@@ -31,13 +31,13 @@
 		717E906427290F9400F425D2 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E906327290F9400F425D2 /* ServiceView.swift */; };
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
 		71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */; };
+		71B0D702274E6F06008C8A68 /* Londrina Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* Londrina Solid.ttf */; };
 		71B3722F27464B390081469D /* ClusterMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3722E27464B390081469D /* ClusterMapMarker.swift */; };
 		71B372312746D0D40081469D /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B372302746D0D40081469D /* Onboarding3View.swift */; };
 		71BBED7D27496A180030FB62 /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBED7C27496A180030FB62 /* OnboardingTabView.swift */; };
 		71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB526926D9867B00C850C7 /* LocationManager.swift */; };
 		71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D331DE26EE2FD800209365 /* Foodbox.swift */; };
 		71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */; };
-		71FF76792724A98100B05779 /* LondrinaSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* LondrinaSolid.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +66,7 @@
 		71606EF4271DA428002837D3 /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = markers.json; sourceTree = "<group>"; };
 		717E2F2426B3058F00210163 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		717E906327290F9400F425D2 /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
-		717EB7F126B3147800958B58 /* LondrinaSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LondrinaSolid.ttf; path = Eatdebox/fonts/LondrinaSolid.ttf; sourceTree = SOURCE_ROOT; };
+		717EB7F126B3147800958B58 /* Londrina Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Londrina Solid.ttf"; path = "Eatdebox/Londrina Solid.ttf"; sourceTree = SOURCE_ROOT; };
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
 		71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDataScraper.swift; sourceTree = "<group>"; };
 		71B3722E27464B390081469D /* ClusterMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterMapMarker.swift; sourceTree = "<group>"; };
@@ -121,9 +121,9 @@
 				7119F36426B1FC0500F96863 /* UI Elements */,
 				7119F34F26B1D9FC00F96863 /* Assets.xcassets */,
 				7119F35426B1D9FC00F96863 /* Info.plist */,
-				717E2F2626B3131E00210163 /* Fonts */,
 				7119F35126B1D9FC00F96863 /* Preview Content */,
 				71415AAA26EFBC8300C78EC9 /* Annual Self Classification Report (2021).numbers */,
+				717EB7F126B3147800958B58 /* Londrina Solid.ttf */,
 				71606EF4271DA428002837D3 /* markers.json */,
 				7119F36026B1E08800F96863 /* Definitions.rtf */,
 				712FB396271DAED80002CA63 /* Localisation */,
@@ -181,14 +181,6 @@
 				71606EF2271D9025002837D3 /* Localizable.strings */,
 			);
 			path = Localisation;
-			sourceTree = "<group>";
-		};
-		717E2F2626B3131E00210163 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				717EB7F126B3147800958B58 /* LondrinaSolid.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		71BBED7B27496A030030FB62 /* Onboarding */ = {
@@ -265,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712FB395271DAE0D0002CA63 /* InfoPlist.strings in Resources */,
+				71B0D702274E6F06008C8A68 /* Londrina Solid.ttf in Resources */,
 				7119F35326B1D9FC00F96863 /* Preview Assets.xcassets in Resources */,
 				710A36902734657C00706515 /* README.md in Resources */,
 				7119F36126B1E08800F96863 /* Definitions.rtf in Resources */,
@@ -272,7 +265,6 @@
 				71606EF5271DA428002837D3 /* markers.json in Resources */,
 				7119F35026B1D9FC00F96863 /* Assets.xcassets in Resources */,
 				710A368E2734655000706515 /* CHANGELOG.md in Resources */,
-				71FF76792724A98100B05779 /* LondrinaSolid.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
