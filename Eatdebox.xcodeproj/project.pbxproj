@@ -30,6 +30,7 @@
 		717E2F2526B3058F00210163 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E2F2426B3058F00210163 /* AboutView.swift */; };
 		717E906427290F9400F425D2 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E906327290F9400F425D2 /* ServiceView.swift */; };
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
+		7196258E274E3FD300FB2A23 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7196258D274E3FD300FB2A23 /* MapView.swift */; };
 		71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */; };
 		71B3722F27464B390081469D /* ClusterMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3722E27464B390081469D /* ClusterMapMarker.swift */; };
 		71B372312746D0D40081469D /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B372302746D0D40081469D /* Onboarding3View.swift */; };
@@ -68,6 +69,7 @@
 		717E906327290F9400F425D2 /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
 		717EB7F126B3147800958B58 /* LondrinaSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LondrinaSolid.ttf; path = Eatdebox/fonts/LondrinaSolid.ttf; sourceTree = SOURCE_ROOT; };
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
+		7196258D274E3FD300FB2A23 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDataScraper.swift; sourceTree = "<group>"; };
 		71B3722E27464B390081469D /* ClusterMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterMapMarker.swift; sourceTree = "<group>"; };
 		71B372302746D0D40081469D /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				71BBED7B27496A030030FB62 /* Onboarding */,
 				7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */,
+				7196258D274E3FD300FB2A23 /* MapView.swift */,
 				7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */,
 				717E2F2426B3058F00210163 /* AboutView.swift */,
 				717E906327290F9400F425D2 /* ServiceView.swift */,
@@ -286,6 +289,7 @@
 				71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */,
 				7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */,
 				717E2F2526B3058F00210163 /* AboutView.swift in Sources */,
+				7196258E274E3FD300FB2A23 /* MapView.swift in Sources */,
 				71BBED7D27496A180030FB62 /* OnboardingTabView.swift in Sources */,
 				7119F34E26B1D9FA00F96863 /* FoodboxMapView.swift in Sources */,
 				7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */,
@@ -454,7 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = edb_red;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
 				DEVELOPMENT_TEAM = 8C7WM5V4Q4;
 				ENABLE_PREVIEWS = YES;
@@ -478,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = edb_red;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Eatdebox/Preview Content\"";
 				DEVELOPMENT_TEAM = 8C7WM5V4Q4;
 				ENABLE_PREVIEWS = YES;

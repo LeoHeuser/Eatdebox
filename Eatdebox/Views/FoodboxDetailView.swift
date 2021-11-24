@@ -38,6 +38,7 @@ struct FoodboxDetailView: View {
         NavigationView {
             List {
                 Section(header: Text("")) {
+                    
                     StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_id", comment: ""), value: "\(foodbox_id)")
                     
                     StaticFoodboxParameterWithClipboard(parameter: NSLocalizedString("foodbox_address", comment: ""), value: foodboxAddress)
@@ -138,9 +139,8 @@ struct FoodboxDetailView: View {
 
 
 
-//struct FoodboxDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FoodboxDetailView(foodbox_id: <#T##Int#>, foodbox_latitude: <#T##Double#>, foodbox_longitude: <#T##Double#>, foodbox_streetname: <#T##String?#>, foodbox_streetnumber: <#T##String?#>, foodbox_postcode: <#T##Int?#>, foodbox_cityname: <#T##String?#>, foodbox_country: <#T##String?#>, foodbox_kind_hosting: <#T##String?#>, foodbox_description: <#T##String?#>)
-//    }
-//}
-
+struct FoodboxDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        FoodboxDetailView(foodbox_id: 234, foodbox_latitude: 51.222504, foodbox_longitude: 6.772701)
+    }
+}

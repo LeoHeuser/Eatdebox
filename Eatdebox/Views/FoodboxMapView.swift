@@ -21,36 +21,25 @@ struct FoodboxMapView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: foodboxData) { foodbox in
-                    MapAnnotation(coordinate: foodbox.coordinate) {
-                        FoodboxMapMarker()
-                            .onTapGesture() {
-                                self.foodboxItem = foodbox
-                                // Open the sheet view with a haptic feedback
-                                let hapticFeedback = UIImpactFeedbackGenerator(style: .medium)
-                                hapticFeedback.prepare()
-                                hapticFeedback.impactOccurred()
+                MapView()
+                    .onAppear(){
+                        DispatchQueue.global(qos: .userInitiated).async {
+                            if onlineDataProcessor.checkIfDataIsValid() == false {
+                                // Do something if no valid data are here
+                                print("Found no valid data!")
+                            } else {
+                                // Load the data from local file
+                                foodboxData = offlineDataProcessor.loadOfflineJSON()
                             }
-                    }
-                }
-                .onAppear(){
-                    DispatchQueue.global(qos: .userInitiated).async {
-                        if onlineDataProcessor.checkIfDataIsValid() == false {
-                            // Do something if no valid data are here
-                            print("Found no valid data!")
-                        } else {
-                            // Load the data from local file
-                            foodboxData = offlineDataProcessor.loadOfflineJSON()
                         }
                     }
-                }
-                .accentColor(Color("edb_green"))
-                .sheet(item: $foodboxItem) { foodboxItem in
-                    FoodboxDetailView(foodbox_id: foodboxItem.id,
-                                      foodbox_latitude: foodboxItem.lat,
-                                      foodbox_longitude: foodboxItem.lon)
-                }
-                .edgesIgnoringSafeArea(.bottom)
+                    .accentColor(Color("edb_green"))
+                    .sheet(item: $foodboxItem) { foodboxItem in
+                        FoodboxDetailView(foodbox_id: foodboxItem.id,
+                                          foodbox_latitude: foodboxItem.lat,
+                                          foodbox_longitude: foodboxItem.lon)
+                    }
+                    .edgesIgnoringSafeArea(.bottom)
                 VStack {
                     Spacer()
                     HStack {

@@ -6,17 +6,23 @@
 //
 
 import SwiftUI
+import Foundation
+
+
 
 struct AboutView: View {
     
-    var offlineDataProcessor = OfflineDataProcessor()
+    // 1 Minuten sind 60 Sekunden
+    @AppStorage("lastFoodboxUpdate") var lastFoodboxUpdate:Double = 0.0
     
     // Parameter
+    @State private var currentCooldown:Double = 0.0
     @State private var showingSheet = false
     @State private var showDownloadErrorAlert = false
     @State private var foodboxCount = "0"
     @State private var downloadButtonDisabled = false
     
+    var offlineDataProcessor = OfflineDataProcessor()
     var onlineDataProcessor = OnlineDataProcessor()
     let appVersionVariable = (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String)!
     
@@ -34,6 +40,7 @@ struct AboutView: View {
                     // Checks if the new data are valid
                     if onlineDataProcessor.checkIfDataIsValid() {
                         foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + NSLocalizedString("foodbox_spaceBefore", comment: "")
+                        lastFoodboxUpdate = Date().timeIntervalSinceReferenceDate
                     } else {
                         showDownloadErrorAlert = true
                         foodboxCount = NSLocalizedString("alertLabel_errorDataDownload", comment: "")
@@ -52,6 +59,7 @@ struct AboutView: View {
                 Link(NSLocalizedString("button_foodsharingRulesAndTips", comment: ""), destination: URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
                 Link(NSLocalizedString("button_toFoodsharingWebsite", comment: ""), destination: URL(string: "https://foodsharing.de")!)
             }
+            
             Section(header: Text(NSLocalizedString("button_legals", comment: ""))) {
                 Link(NSLocalizedString("button_imprint", comment: ""), destination: URL(string: "https://eatdebox.eu/imprint/")!)
                 Link(NSLocalizedString("button_dataPrivacy", comment: ""), destination: URL(string: "https://eatdebox.eu/data-privacy/")!)
@@ -62,6 +70,13 @@ struct AboutView: View {
         }
         .onAppear() {
             foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + NSLocalizedString("foodbox_spaceBefore", comment: "")
+            
+            if lastFoodboxUpdate != 0 {
+                currentCooldown = round(Date().timeIntervalSinceReferenceDate - lastFoodboxUpdate)
+                print("Cooldown: \(currentCooldown)")
+            } else {
+                print("Cooldown OFF")
+            }
         }
         Text(NSLocalizedString("madeWithLove", comment: "") + appVersionVariable)
             .multilineTextAlignment(.center)
