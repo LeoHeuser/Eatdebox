@@ -32,6 +32,7 @@
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
 		7196258E274E3FD300FB2A23 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7196258D274E3FD300FB2A23 /* MapView.swift */; };
 		71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */; };
+		71B0D704274EA9D5008C8A68 /* OtherMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0D703274EA9D5008C8A68 /* OtherMapView.swift */; };
 		71B3722F27464B390081469D /* ClusterMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3722E27464B390081469D /* ClusterMapMarker.swift */; };
 		71B372312746D0D40081469D /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B372302746D0D40081469D /* Onboarding3View.swift */; };
 		71BBED7D27496A180030FB62 /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBED7C27496A180030FB62 /* OnboardingTabView.swift */; };
@@ -71,6 +72,7 @@
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
 		7196258D274E3FD300FB2A23 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDataScraper.swift; sourceTree = "<group>"; };
+		71B0D703274EA9D5008C8A68 /* OtherMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherMapView.swift; sourceTree = "<group>"; };
 		71B3722E27464B390081469D /* ClusterMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterMapMarker.swift; sourceTree = "<group>"; };
 		71B372302746D0D40081469D /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
 		71BBED7C27496A180030FB62 /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				71BBED7B27496A030030FB62 /* Onboarding */,
 				7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */,
 				7196258D274E3FD300FB2A23 /* MapView.swift */,
+				71B0D703274EA9D5008C8A68 /* OtherMapView.swift */,
 				7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */,
 				717E2F2426B3058F00210163 /* AboutView.swift */,
 				717E906327290F9400F425D2 /* ServiceView.swift */,
@@ -299,6 +302,7 @@
 				7119F36626B2005A00F96863 /* Onboarding1View.swift in Sources */,
 				7119F37626B21F8400F96863 /* CalculateNavigation.swift in Sources */,
 				7119F36A26B2056800F96863 /* Onboarding2View.swift in Sources */,
+				71B0D704274EA9D5008C8A68 /* OtherMapView.swift in Sources */,
 				71B3722F27464B390081469D /* ClusterMapMarker.swift in Sources */,
 				717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */,
 				7119F36326B1F33800F96863 /* PrimaryButtons.swift in Sources */,
