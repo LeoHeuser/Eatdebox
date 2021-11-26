@@ -46,7 +46,6 @@ struct FoodboxDetailView: View {
                     //                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_hostingType", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_missingFeature", comment: ""))")
                     //
                     //                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_lastActivity ?? NSLocalizedString("label_missingFeature", comment: ""))")
-                    
                 }
                 
                 Section(header: Text(NSLocalizedString("foodbox_header_description", comment: ""))) {
@@ -60,13 +59,11 @@ struct FoodboxDetailView: View {
                 }
             }
             .navigationBarTitle(NSLocalizedString("foodbox_spaceAfter", comment: "") + (foodbox_streetname ?? String(foodbox_id)), displayMode: .inline)
-            .navigationBarItems(trailing:
-                                    Button {
+            .navigationBarItems(trailing: Button {
                 UIApplication.shared.open(URL(string: "https://foodsharing.de/?page=fairteiler&sub=ft&id=\(foodbox_id)")!)
             } label: {
                 Image(systemName: "network")
-            }
-            )
+            })
         }
         Button {
             showingNavigationActionSheet.toggle()

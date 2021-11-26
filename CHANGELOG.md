@@ -5,7 +5,7 @@
         <li>A button next to the used libraries to get more information</li>
         <li>Custom font headers in the navigation bars</li>
     </ul>
-    (1) Currently under development 🚧
+    (1) Released on 24.11.2021
     <ul>
         <li>Minor adjustments to the Eatdebox app to help you save food even better</li>
         <li>Smaller navigation bar in the MapView to provide more space for the map annotations</li>

@@ -17,6 +17,8 @@ struct AboutView: View {
     @State private var foodboxCount = "0"
     @State private var downloadButtonDisabled = false
     
+    @State private var showingFeedbackSheet = false
+    
     var onlineDataProcessor = OnlineDataProcessor()
     let appVersionVariable = (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String)!
     
@@ -49,6 +51,19 @@ struct AboutView: View {
             }
             
             Section(header: Text(NSLocalizedString("becomeActive_header", comment: "")), footer: Text(NSLocalizedString("becomeActive_footer", comment: ""))) {
+                
+                Button {
+                    showingFeedbackSheet = true
+                } label: {
+                    HStack {
+                        Image(systemName: "envelope")
+                        Text("Provide Feedback")
+                    }
+                }
+                .sheet(isPresented: $showingFeedbackSheet) {
+                    FeedbackView()
+                }
+                
                 Link(NSLocalizedString("button_foodsharingRulesAndTips", comment: ""), destination: URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
                 Link(NSLocalizedString("button_toFoodsharingWebsite", comment: ""), destination: URL(string: "https://foodsharing.de")!)
             }
@@ -63,6 +78,7 @@ struct AboutView: View {
         .onAppear() {
             foodboxCount = String(offlineDataProcessor.loadOfflineJSON().count) + NSLocalizedString("foodbox_spaceBefore", comment: "")
         }
+        
         Text(NSLocalizedString("madeWithLove", comment: "") + appVersionVariable)
             .multilineTextAlignment(.center)
             .padding([.leading, .bottom, .trailing])
