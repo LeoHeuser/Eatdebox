@@ -9,35 +9,40 @@ import SwiftUI
 
 struct FeedbackView: View {
     
-    let feedbackCharakterLimit:Int = 1000
+    @AppStorage("userEmailAddress") var userEmailAddress: String?
+    
+    let feedbackCharakterLimit:Int = 900
     
     @State private var userEmail = ""
     @State private var kindOfFeedback = ""
-    @State private var feedbackText: String = ""
+    @State private var feedbackText = ""
     
     @State private var textSpeicher = ""
-    @State private var sendFeedbackButtonDisabled = true
+    @State private var sendFeedbackButtonDisabled = false
     
     var body: some View {
         NavigationView() {
             VStack {
                 Form {
-                    
-                    Section(header: Text("Your contact information"), footer: Text("Wir nutzen deine E-Mail-Adresse um dir bescheid zu geben, wenn dein Feedback kommt oder wir dir helfen können.")) {
-                        TextField("Your email address",text: $userEmail)
+                    Section(header: Text(NSLocalizedString("header_howToContact", comment: "")), footer: Text(NSLocalizedString("text_whyEmailWithFeedback", comment: ""))) {
+                        TextField(NSLocalizedString("textField_yourEmail", comment: ""),text: $userEmail)
                             .keyboardType(.emailAddress)
+                            .disableAutocorrection(true)
+                            .onAppear(){
+                                userEmail = userEmailAddress ?? ""
+                            }
                     }
                     
-                    Section(header: Text("Kind of feedback")) {
-                        Picker("Kind of feedback", selection: $kindOfFeedback) {
-                            Text("Error").tag("bug")
-                            Text("Idea").tag("idea")
-                            Text("Other").tag("other")
+                    Section(header: Text(NSLocalizedString("header_kindOfFeedback", comment: ""))) {
+                        Picker("kindOfFeedback", selection: $kindOfFeedback) {
+                            Text(NSLocalizedString("pickerTag_error", comment: "")).tag("bug")
+                            Text(NSLocalizedString("pickerTag_idea", comment: "")).tag("idea")
+                            Text(NSLocalizedString("pickerTag_other", comment: "")).tag("other")
                         }
                         .pickerStyle(.segmented)
                     }
                     
-                    Section(header: Text("Your feedback"), footer: Text("Du hast noch \(feedbackCharakterLimit - feedbackText.count) Zeichen über.")) {
+                    Section(header: Text(NSLocalizedString("header_yourFeedback", comment: "")), footer: Text(NSLocalizedString("footer_characterLimit_pre", comment: "") + String(feedbackCharakterLimit - feedbackText.count) + NSLocalizedString("footer_characterLimit_post", comment: ""))) {
                         TextEditor(text: $feedbackText)
                             .frame(height: 200)
                             .onChange(of: feedbackText) { newValue in
@@ -50,13 +55,25 @@ struct FeedbackView: View {
                             }
                     }
                     
-                    Button("Send Feedback") {
-                        print("Feedback was send")
+                    Button(NSLocalizedString("button_sendFeedback", comment: "")) {
+                        writeFeedbackInDatabase(email_address: userEmail, category: kindOfFeedback, feedback: feedbackText)
+                        
+                        // Lokales (!) Speichern der E-Mail Adresse des Users für das nächste Feedback.
+                        userEmailAddress = userEmail
+                        
+                        // Leeren der Textfelder
+                        userEmail = ""
+                        kindOfFeedback = ""
+                        feedbackText = ""
                     }
-                    .padding(.vertical)
                     .disabled(sendFeedbackButtonDisabled)
+                    
+                    //                    Button("Get Feedback") {
+                    //                        getAllFeedbackFromDatabase()
+                    //                    }
+                    //                    .disabled(sendFeedbackButtonDisabled)
                 }
-                .navigationBarTitle("Provide Feedback", displayMode: .inline)
+                .navigationBarTitle(NSLocalizedString("label_provideFeedback", comment: ""), displayMode: .inline)
             }
         }
     }

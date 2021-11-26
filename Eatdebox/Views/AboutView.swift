@@ -57,7 +57,7 @@ struct AboutView: View {
                 } label: {
                     HStack {
                         Image(systemName: "envelope")
-                        Text("Provide Feedback")
+                        Text(NSLocalizedString("label_provideFeedback", comment: ""))
                     }
                 }
                 .sheet(isPresented: $showingFeedbackSheet) {
@@ -65,7 +65,6 @@ struct AboutView: View {
                 }
                 
                 Link(NSLocalizedString("button_foodsharingRulesAndTips", comment: ""), destination: URL(string: "https://wiki.foodsharing.de/Hygieneregeln")!)
-                Link(NSLocalizedString("button_toFoodsharingWebsite", comment: ""), destination: URL(string: "https://foodsharing.de")!)
             }
             Section(header: Text(NSLocalizedString("button_legals", comment: ""))) {
                 Link(NSLocalizedString("button_imprint", comment: ""), destination: URL(string: "https://eatdebox.eu/imprint/")!)

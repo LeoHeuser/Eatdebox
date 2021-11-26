@@ -31,6 +31,8 @@
 		717E906427290F9400F425D2 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E906327290F9400F425D2 /* ServiceView.swift */; };
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
 		718BADFD275152F700343E83 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BADFC275152F700343E83 /* FeedbackView.swift */; };
+		718BAE0027517A9F00343E83 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 718BADFF27517A9F00343E83 /* Supabase */; };
+		718BAE0227517B6200343E83 /* SupabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BAE0127517B6200343E83 /* SupabaseController.swift */; };
 		71A6EE02271DF743003FEF4A /* FoodboxDataScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */; };
 		71B0D702274E6F06008C8A68 /* Londrina Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 717EB7F126B3147800958B58 /* Londrina Solid.ttf */; };
 		71B3722F27464B390081469D /* ClusterMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3722E27464B390081469D /* ClusterMapMarker.swift */; };
@@ -70,6 +72,7 @@
 		717EB7F126B3147800958B58 /* Londrina Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Londrina Solid.ttf"; path = "Eatdebox/Londrina Solid.ttf"; sourceTree = SOURCE_ROOT; };
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
 		718BADFC275152F700343E83 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		718BAE0127517B6200343E83 /* SupabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseController.swift; sourceTree = "<group>"; };
 		71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodboxDataScraper.swift; sourceTree = "<group>"; };
 		71B3722E27464B390081469D /* ClusterMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterMapMarker.swift; sourceTree = "<group>"; };
 		71B372302746D0D40081469D /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718BAE0027517A9F00343E83 /* Supabase in Frameworks */,
 				7139DA7B271DBCD60050F34F /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +123,7 @@
 				7147DBD726ED513700502FD1 /* OfflineDataProcessor.swift */,
 				71F2E8BA26C7E64900366B3D /* OnlineDataProcessor.swift */,
 				71A6EE01271DF743003FEF4A /* FoodboxDataScraper.swift */,
+				718BAE0127517B6200343E83 /* SupabaseController.swift */,
 				7119F36D26B214CE00F96863 /* Views */,
 				7119F36426B1FC0500F96863 /* UI Elements */,
 				7119F34F26B1D9FC00F96863 /* Assets.xcassets */,
@@ -213,6 +218,7 @@
 			name = Eatdebox;
 			packageProductDependencies = (
 				7139DA7A271DBCD60050F34F /* SwiftSoup */,
+				718BADFF27517A9F00343E83 /* Supabase */,
 			);
 			productName = Eatdebox;
 			productReference = 7119F34826B1D9FA00F96863 /* Eatdebox.app */;
@@ -244,6 +250,7 @@
 			mainGroup = 7119F33F26B1D9F900F96863;
 			packageReferences = (
 				7139DA79271DBCD60050F34F /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				718BADFE27517A9F00343E83 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			productRefGroup = 7119F34926B1D9FA00F96863 /* Products */;
 			projectDirPath = "";
@@ -281,6 +288,7 @@
 				71D331DF26EE2FD800209365 /* Foodbox.swift in Sources */,
 				7147DBD826ED513700502FD1 /* OfflineDataProcessor.swift in Sources */,
 				717E2F2526B3058F00210163 /* AboutView.swift in Sources */,
+				718BAE0227517B6200343E83 /* SupabaseController.swift in Sources */,
 				71BBED7D27496A180030FB62 /* OnboardingTabView.swift in Sources */,
 				7119F34E26B1D9FA00F96863 /* FoodboxMapView.swift in Sources */,
 				7119F37426B21B2200F96863 /* StaticFoodboxParameter.swift in Sources */,
@@ -524,6 +532,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		718BADFE27517A9F00343E83 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -531,6 +547,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7139DA79271DBCD60050F34F /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
+		};
+		718BADFF27517A9F00343E83 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 718BADFE27517A9F00343E83 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

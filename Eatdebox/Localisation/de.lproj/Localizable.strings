@@ -117,3 +117,43 @@
 
 /* (No Comment) */
 "label_skip" = "Überspringen";
+
+/* (No Comment) */
+"label_provideFeedback" = "Feedback geben";
+
+
+
+
+
+/* (No Comment) */
+"header_howToContact" = "Wie können wir dich erreichen?";
+
+/* (No Comment) */
+"text_whyEmailWithFeedback" = "Wir verwenden deine E-Mail-Adresse, um dich zu informieren, wenn dein Feedback eingeht oder wenn wir dir helfen können.";
+
+/* (No Comment) */
+"textField_yourEmail" = "Deine E-Mail Adresse";
+
+/* (No Comment) */
+"header_kindOfFeedback" = "Welche Art von Feedback?";
+
+/* (No Comment) */
+"pickerTag_error" = "Fehler";
+
+/* (No Comment) */
+"pickerTag_idea" = "Idee";
+
+/* (No Comment) */
+"pickerTag_other" = "Anderes";
+
+/* (No Comment) */
+"header_yourFeedback" = "Dein Feedback an uns";
+
+/* (No Comment) */
+"footer_characterLimit_pre" = "Du hast noch ";
+
+/* (No Comment) */
+"footer_characterLimit_post" = " Zeichen über.";
+
+/* (No Comment) */
+"button_sendFeedback" = "Feedback senden";

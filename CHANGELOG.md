@@ -4,6 +4,8 @@
     <ul>
         <li>A button next to the used libraries to get more information</li>
         <li>Custom font headers in the navigation bars</li>
+        <li>Feedback system inside the app</li>
+        <li>The app now stores the email address of the user locally (!) when you provide feedback</li>
     </ul>
     (1) Released on 24.11.2021
     <ul>
