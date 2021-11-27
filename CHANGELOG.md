@@ -1,6 +1,6 @@
 <h3>0.8.1</h3>
 <p>
-    (2) Currently under development 🚧
+    (2) Released on 27.11.2021
     <ul>
         <li>A button next to the used libraries to get more information</li>
         <li>Custom font headers in the navigation bars</li>
