@@ -157,3 +157,58 @@
 
 /* (No Comment) */
 "button_sendFeedback" = "Feedback senden";
+
+
+
+
+
+// Acknowledgements
+
+/* (No Comment) */
+"label_acknowledgements" = "Danksagungen";
+
+/* (No Comment) */
+"label_header_swiftLibraries" = "Swift libraries";
+/* (No Comment) */
+"label_header_fonts" = "Schriften";
+/* (No Comment) */
+"label_header_data" = "Daten";
+/* (No Comment) */
+"label_header_icons" = "Icons";
+
+
+
+/* (No Comment) */
+"label_name_swiftSoup" = "SwiftSoup";
+/* (No Comment) */
+"label_license_swiftSoup" = "MIT Lizenz";
+/* (No Comment) */
+"label_description_swiftSoup" = "Mit der nativen Swift-Bibliothek SwiftSoup von Nabil Chatbi fängt das Projekt Eatdebox die Informationen von der Website von Foodsharing e.V. ab und bereitet sie für die Anzeige in der App auf. Dies schafft einen Mehrwert für den Nutzer in Form von grundlegenden Informationen über die Foodboxen.";
+
+/* (No Comment) */
+"label_name_supabase" = "Supabase Swift Library";
+/* (No Comment) */
+"label_license_supabase" = "MIT Lizenz";
+/* (No Comment) */
+"label_description_supabase" = "Mit der Supabase-Bibliothek für Swift verbindet sich Eatdebox mit einer Datenbank, die von Supabase gehostet wird. Die Daten in der Datenbank sind nur für die Rückmeldung derzeit an einem Ort strukturiert zu halten.";
+
+/* (No Comment) */
+"label_name_londrina" = "Londrina Solid";
+/* (No Comment) */
+"label_license_londrina" = "Creative Commons Attribution Share Alike Lizenz";
+/* (No Comment) */
+"label_description_londrina" = "Die Schriftart, die wir im Eatdebox-Logo und als Überschriften verwenden, ist die Londrina Solid. Es handelt sich um eine kostenlose und in die App eingebettete Schriftart, die zum Selfmade-Ansatz von Eatdebox passt. Die Schriftart wurde von Marcelo Magalhães entworfen und über Font Squirrel heruntergeladen.";
+
+/* (No Comment) */
+"label_name_foodsharing" = "Foodsharing e.V.";
+/* (No Comment) */
+"label_license_foodsharing" = "Öffentlich zugängliche Daten";
+/* (No Comment) */
+"label_description_foodsharing" = "Die Daten für die Foodboxen stammen vom Foodsharing e.V. in Deutschland. Die Standorte werden über die API abgefragt und die Informationen zu den Foodboxen werden von der Profilseite der Website geladen.";
+
+/* (No Comment) */
+"label_name_sfSymbols" = "SF Symbols 3";
+/* (No Comment) */
+"label_license_sfSymbols" = "Lizensiert durch Apple Inc.";
+/* (No Comment) */
+"label_description_sfSymbols" = "Die Apple SF Symbols 3 Bibliothek ist eine native Apple OS Bibliothek, die in allen iOS Geräten vorinstalliert ist. Sie ist kostenlos und gut bewährt. Daher benötigen wir sie in Eatdebox, um Ihnen Symbole zur Verfügung zu stellen, die Ihnen helfen, in der App zu navigieren.";

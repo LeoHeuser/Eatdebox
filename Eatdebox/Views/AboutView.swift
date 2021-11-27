@@ -70,7 +70,7 @@ struct AboutView: View {
                 Link(NSLocalizedString("button_imprint", comment: ""), destination: URL(string: "https://eatdebox.eu/imprint/")!)
                 Link(NSLocalizedString("button_dataPrivacy", comment: ""), destination: URL(string: "https://eatdebox.eu/data-privacy/")!)
                 NavigationLink(destination: ServiceView()) {
-                    Text("Acknowledgements")
+                    Text(NSLocalizedString("label_acknowledgements", comment: ""))
                 }
             }
         }

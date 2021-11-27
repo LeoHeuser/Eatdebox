@@ -4,8 +4,10 @@
     <ul>
         <li>A button next to the used libraries to get more information</li>
         <li>Custom font headers in the navigation bars</li>
+        <li>New font of the onboarding headers</li>
         <li>Feedback system inside the app</li>
         <li>The app now stores the email address of the user locally (!) when you provide feedback</li>
+        <li>Acknowledgements are now available in German language</li>
     </ul>
     (1) Released on 24.11.2021
     <ul>

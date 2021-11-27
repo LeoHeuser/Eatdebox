@@ -26,10 +26,8 @@ import Foundation
         WindowGroup {
             VStack{
                 if (hadOnboarding) {
-//                    FeedbackView()
                     FoodboxMapView()
                 } else {
-                    //                    Onboarding1View()
                     OnboardingTabView()
                 }
             }

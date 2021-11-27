@@ -65,7 +65,7 @@
 "onboaring3_header" = "Houston, we have no problem.";
 
 /* (No Comment) */
-"onboaring3_text" = "Eatdebox downloads the positions of the food boxes of Foodsharing e.V.. These are public distributors all over Europe. Download the first time the dataset on the top right via the info-icon.";
+"onboaring3_text" = "Eatdebox downloads the positions of the Foodboxes from the Foodsharing e.V. database. These are public distributors all over Europe. Download the first time the dataset on the top right via the info-icon.";
 
 /* (No Comment) */
 "foodbox_id" = "Foodbox ID";
@@ -121,10 +121,6 @@
 /* (No Comment) */
 "label_provideFeedback" = "Provide Feedback";
 
-
-
-
-
 /* (No Comment) */
 "header_howToContact" = "How can we get back to you?";
 
@@ -157,3 +153,55 @@
 
 /* (No Comment) */
 "button_sendFeedback" = "Send feedback";
+
+
+
+// Acknowledgements
+
+/* (No Comment) */
+"label_acknowledgements" = "Acknowledgements";
+
+/* (No Comment) */
+"label_header_swiftLibraries" = "Swift libraries";
+/* (No Comment) */
+"label_header_fonts" = "Fonts";
+/* (No Comment) */
+"label_header_data" = "Data";
+/* (No Comment) */
+"label_header_icons" = "Icons";
+
+
+/* (No Comment) */
+"label_name_swiftSoup" = "SwiftSoup";
+/* (No Comment) */
+"label_license_swiftSoup" = "MIT Licence";
+/* (No Comment) */
+"label_description_swiftSoup" = "With the native Swift library SwiftSoup by Nabil Chatbi the project Eatdebox catches the information from the Foodsharing e.V website and prepares it to display it in the app. This generates value for the user in terms of providing the basic information about the Foodboxes.";
+
+/* (No Comment) */
+"label_name_supabase" = "Supabase Swift Library";
+/* (No Comment) */
+"label_license_supabase" = "MIT Licence";
+/* (No Comment) */
+"label_description_supabase" = "With the Supabase library for Swift Eatdebox connects to a database hosted by Supabase. The data in the data base are only for the feedback currently to keep it at one place structured.";
+
+/* (No Comment) */
+"label_name_londrina" = "Londrina Solid";
+/* (No Comment) */
+"label_license_londrina" = "Creative Commons Attribution Share Alike License";
+/* (No Comment) */
+"label_description_londrina" = "The font we use in the Eatdebox logo and as headers is the Londrina Solid. It is a free to use and in the app embedded font which fits the self-made approach of Eatdebox. The font was designed by Marcelo Magalhães and downloaded via Font Squirrel.";
+
+/* (No Comment) */
+"label_name_foodsharing" = "Foodsharing e.V.";
+/* (No Comment) */
+"label_license_foodsharing" = "Data public available";
+/* (No Comment) */
+"label_description_foodsharing" = "The data for the Foodboxes are from the Foodsharing e.V. in Germany. The locations are requested from the API and the information about the Foodboxes are oaded from the profile page of the website.";
+
+/* (No Comment) */
+"label_name_sfSymbols" = "SF Symbols 3";
+/* (No Comment) */
+"label_license_sfSymbols" = "Licensed by Apple Inc.";
+/* (No Comment) */
+"label_description_sfSymbols" = "The Apple SF Symbols 3 library is a native Apple OS library prebuold into all iOS devices. It is free to use and well approved. Therefore we need it in Eatdebox to provide you icons that help you to navigate throughout the app.";

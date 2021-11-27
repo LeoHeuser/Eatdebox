@@ -68,10 +68,10 @@ struct FeedbackView: View {
                     }
                     .disabled(sendFeedbackButtonDisabled)
                     
-                    //                    Button("Get Feedback") {
-                    //                        getAllFeedbackFromDatabase()
-                    //                    }
-                    //                    .disabled(sendFeedbackButtonDisabled)
+                    Button("Get Feedback") {
+                        getAllFeedbackFromDatabase()
+                    }
+                    .disabled(sendFeedbackButtonDisabled)
                 }
                 .navigationBarTitle(NSLocalizedString("label_provideFeedback", comment: ""), displayMode: .inline)
             }

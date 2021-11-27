@@ -20,7 +20,7 @@ struct Feedback: Codable {
     var feedback:String?
 }
 
-// Get the whole feedback db
+// Get the whole feedback db - Only for testing. Don't keep it in the release.
 func getAllFeedbackFromDatabase() {
     database.from("feedback_db").select().execute { result in
         switch result {

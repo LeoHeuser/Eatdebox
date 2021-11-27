@@ -10,39 +10,40 @@ import SwiftUI
 struct ServiceView: View {
     var body: some View {
         List {
-            Section(header: Text("Swift libraries")) {
-                AcknowledgementSwiftUIElement(element: "SwiftSoup",
-                                              licence: "MIT Licence",
-                                              description: "With the native Swift library SwiftSoup by Nabil Chatbi the project Eatdebox catches the information from the Foodsharing e.V website and prepares it to display it in the app. This generates value for the user in terms of providing the basic information about the Foodboxes.",
+            Section(header: Text(NSLocalizedString("label_header_swiftLibraries", comment: ""))) {
+                AcknowledgementSwiftUIElement(element:      NSLocalizedString("label_name_swiftSoup", comment: ""),
+                                              licence:      NSLocalizedString("label_license_swiftSoup", comment: ""),
+                                              description:  NSLocalizedString("label_description_swiftSoup", comment: ""),
                                               informationUrl: "https://github.com/scinfu/SwiftSoup")
-                AcknowledgementSwiftUIElement(element: "Supabase Swift Library",
-                                              licence: "MIT Licence",
-                                              description: "With the Supabase library for Swift Eatdebox connects to a database hosted by Supabase. The data in the data base are only for the feedback currently to keep it at one place structured.",
+                
+                AcknowledgementSwiftUIElement(element:      NSLocalizedString("label_name_supabase", comment: ""),
+                                              licence:      NSLocalizedString("label_license_supabase", comment: ""),
+                                              description:  NSLocalizedString("label_description_supabase", comment: ""),
                                               informationUrl: "https://github.com/supabase-community/supabase-swift")
             }
             
-            Section(header: Text("Fonts")) {
-                AcknowledgementSwiftUIElement(element: "Londrina",
-                                              licence: "Creative Commons Attribution Share Alike License",
-                                              description: "The font we use in the Eatdebox logo and as headers is the Londrina Solid. It is a free to use and in the app embedded font which fits the self-made approach of Eatdebox. The font was designed by Marcelo Magalhães and downloaded via Font Squirrel.",
+            Section(header: Text(NSLocalizedString("label_header_fonts", comment: ""))) {
+                AcknowledgementSwiftUIElement(element:      NSLocalizedString("label_name_londrina", comment: ""),
+                                              licence:      NSLocalizedString("label_license_londrina", comment: ""),
+                                              description:  NSLocalizedString("label_description_londrina", comment: ""),
                                               informationUrl: "https://www.fontsquirrel.com/fonts/londrina")
             }
             
-            Section(header: Text("Data")) {
-                AcknowledgementSwiftUIElement(element: "Foodsharing e.V.",
-                                              licence: "Data public available",
-                                              description: "The data for the Foodboxes are from the Foodsharing e.V. in Germany. The locations are requested from the API and the information about the Foodboxes are oaded from the profile page of the website.",
+            Section(header: Text(NSLocalizedString("label_header_data", comment: ""))) {
+                AcknowledgementSwiftUIElement(element:      NSLocalizedString("label_name_foodsharing", comment: ""),
+                                              licence:      NSLocalizedString("label_license_foodsharing", comment: ""),
+                                              description:  NSLocalizedString("label_description_foodsharing", comment: ""),
                                               informationUrl: "https://foodsharing.de")
             }
             
-            Section(header: Text("Icons")) {
-                AcknowledgementSwiftUIElement(element: "SF Symbols 3",
-                                              licence: "Licensed by Apple Inc.",
-                                              description: "The Apple SF Symbols 3 library is a native Apple OS library prebuold into all iOS devices. It is free to use and well approved. Therefore we need it in Eatdebox to provide you icons that help you to navigate throughout the app.",
+            Section(header: Text(NSLocalizedString("label_header_icons", comment: ""))) {
+                AcknowledgementSwiftUIElement(element:      NSLocalizedString("label_name_sfSymbols", comment: ""),
+                                              licence:      NSLocalizedString("label_license_sfSymbols", comment: ""),
+                                              description:  NSLocalizedString("label_description_sfSymbols", comment: ""),
                                               informationUrl: "https://developer.apple.com/sf-symbols")
             }
         }
-        .navigationBarTitle("Acknowledgements", displayMode: .inline)
+        .navigationBarTitle(NSLocalizedString("label_acknowledgements", comment: ""), displayMode: .inline)
     }
 }
 
