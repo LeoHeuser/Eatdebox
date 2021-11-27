@@ -18,6 +18,7 @@ struct Feedback: Codable {
     var email_address:String?
     var category:String?
     var feedback:String?
+    var checker:Int
 }
 
 // Get the whole feedback db - Only for testing. Don't keep it in the release.
@@ -40,7 +41,7 @@ func getAllFeedbackFromDatabase() {
 // Write something in the feedback db
 func writeFeedbackInDatabase(email_address: String, category: String, feedback: String) {
     do {
-        let feedback = Feedback(email_address: email_address, category: category, feedback: feedback)
+        let feedback = Feedback(email_address: email_address, category: category, feedback: feedback, checker: 344)
         let jsonData: Data = try JSONEncoder().encode(feedback)
         
         database.from("feedback_db").insert(values: jsonData).execute { result in

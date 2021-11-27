@@ -34,3 +34,16 @@ import Foundation
         }
     }
 }
+
+
+
+// Function for a shorter integration of localised strings
+//extension String {
+//    func isId() -> String {
+//        return NSLocalizedString(self, comment: "")
+//    }
+//}
+
+
+
+

@@ -11,14 +11,14 @@ struct FeedbackView: View {
     
     @AppStorage("userEmailAddress") var userEmailAddress: String?
     
-    let feedbackCharakterLimit:Int = 900
+    let feedbackCharakterLimit:Int = 500
     
     @State private var userEmail = ""
     @State private var kindOfFeedback = ""
     @State private var feedbackText = ""
     
     @State private var textSpeicher = ""
-    @State private var sendFeedbackButtonDisabled = false
+    @State private var sendFeedbackButtonDisabled = true
     
     var body: some View {
         NavigationView() {
@@ -55,7 +55,7 @@ struct FeedbackView: View {
                             }
                     }
                     
-                    Button(NSLocalizedString("button_sendFeedback", comment: "")) {
+                    Button("label_comingSoon") {
                         writeFeedbackInDatabase(email_address: userEmail, category: kindOfFeedback, feedback: feedbackText)
                         
                         // Lokales (!) Speichern der E-Mail Adresse des Users für das nächste Feedback.
@@ -68,10 +68,10 @@ struct FeedbackView: View {
                     }
                     .disabled(sendFeedbackButtonDisabled)
                     
-                    Button("Get Feedback") {
-                        getAllFeedbackFromDatabase()
-                    }
-                    .disabled(sendFeedbackButtonDisabled)
+                    //                    Button("Get Feedback") {
+                    //                        getAllFeedbackFromDatabase()
+                    //                    }
+                    //                    .disabled(sendFeedbackButtonDisabled)
                 }
                 .navigationBarTitle(NSLocalizedString("label_provideFeedback", comment: ""), displayMode: .inline)
             }

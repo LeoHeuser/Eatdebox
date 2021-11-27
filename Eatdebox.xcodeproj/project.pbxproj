@@ -28,7 +28,7 @@
 		71606EF0271D9025002837D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71606EF2271D9025002837D3 /* Localizable.strings */; };
 		71606EF5271DA428002837D3 /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = 71606EF4271DA428002837D3 /* markers.json */; };
 		717E2F2526B3058F00210163 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E2F2426B3058F00210163 /* AboutView.swift */; };
-		717E906427290F9400F425D2 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E906327290F9400F425D2 /* ServiceView.swift */; };
+		717E906427290F9400F425D2 /* AcknowledgementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E906327290F9400F425D2 /* AcknowledgementView.swift */; };
 		717EB7F626B3314200958B58 /* SecondaryButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7F526B3314200958B58 /* SecondaryButtons.swift */; };
 		718BADFD275152F700343E83 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BADFC275152F700343E83 /* FeedbackView.swift */; };
 		718BAE0027517A9F00343E83 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 718BADFF27517A9F00343E83 /* Supabase */; };
@@ -68,7 +68,7 @@
 		71606EF3271D9063002837D3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		71606EF4271DA428002837D3 /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = markers.json; sourceTree = "<group>"; };
 		717E2F2426B3058F00210163 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		717E906327290F9400F425D2 /* ServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
+		717E906327290F9400F425D2 /* AcknowledgementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementView.swift; sourceTree = "<group>"; };
 		717EB7F126B3147800958B58 /* Londrina Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Londrina Solid.ttf"; path = "Eatdebox/Londrina Solid.ttf"; sourceTree = SOURCE_ROOT; };
 		717EB7F526B3314200958B58 /* SecondaryButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtons.swift; sourceTree = "<group>"; };
 		718BADFC275152F700343E83 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 				7119F34D26B1D9FA00F96863 /* FoodboxMapView.swift */,
 				7119F36B26B20F5600F96863 /* FoodboxDetailView.swift */,
 				717E2F2426B3058F00210163 /* AboutView.swift */,
-				717E906327290F9400F425D2 /* ServiceView.swift */,
+				717E906327290F9400F425D2 /* AcknowledgementView.swift */,
 				718BADFC275152F700343E83 /* FeedbackView.swift */,
 			);
 			path = Views;
@@ -306,7 +306,7 @@
 				713548EE273B09C7002C4793 /* AcknowledgementSwiftUIElement.swift in Sources */,
 				71CB526A26D9867B00C850C7 /* LocationManager.swift in Sources */,
 				71B372312746D0D40081469D /* Onboarding3View.swift in Sources */,
-				717E906427290F9400F425D2 /* ServiceView.swift in Sources */,
+				717E906427290F9400F425D2 /* AcknowledgementView.swift in Sources */,
 				71F2E8BB26C7E64900366B3D /* OnlineDataProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -154,7 +154,8 @@
 /* (No Comment) */
 "button_sendFeedback" = "Send feedback";
 
-
+/* (No Comment) */
+"label_comingSoon" = "Feature coming soon";
 
 // Acknowledgements
 

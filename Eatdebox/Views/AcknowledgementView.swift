@@ -1,5 +1,5 @@
 //
-//  ServiceView.swift
+//  AcknowledgementView.swift
 //  Eatdebox
 //
 //  Created by Leo Heuser on 27.10.21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ServiceView: View {
+struct AcknowledgementView: View {
     var body: some View {
         List {
             Section(header: Text(NSLocalizedString("label_header_swiftLibraries", comment: ""))) {
@@ -48,8 +48,8 @@ struct ServiceView: View {
 }
 
 
-struct ServiceView_Previews: PreviewProvider {
+struct AcknowledgementView_Previews: PreviewProvider {
     static var previews: some View {
-        ServiceView()
+        AcknowledgementView()
     }
 }
