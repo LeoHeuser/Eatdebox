@@ -47,10 +47,10 @@
 "button_imprint" = "Imprint";
 
 /* (No Comment) */
-"button_dataPrivacy" = "Data Privacy";
+"button_dataPrivacy" = "App data policy";
 
 /* (No Comment) */
-"onboaring1_header" = "This is Eatdebox.";
+"onboaring1_header" = "Hey, nice to see you.";
 
 /* (No Comment) */
 "onboaring1_text" = "Find free food in your area to save it from the trash and save money. Foodboxes are distributors where you can share your food with others and take it if you need it.";

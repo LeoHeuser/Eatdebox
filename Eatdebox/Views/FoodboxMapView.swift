@@ -67,7 +67,7 @@ struct FoodboxMapView: View {
             }
             .navigationBarTitle(NSLocalizedString("eatdebox_appName", comment: ""), displayMode: .inline)
             .navigationBarItems(trailing: NavigationLink(destination: AboutView()) {
-                Image(systemName: "info.circle")
+                Image(systemName: "gearshape.2")
             }
             )
         }

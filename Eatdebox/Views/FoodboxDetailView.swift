@@ -8,6 +8,7 @@
 import SwiftUI
 import CoreLocation
 import SwiftSoup
+import MapKit
 
 struct FoodboxDetailView: View {
     
@@ -33,19 +34,26 @@ struct FoodboxDetailView: View {
     
     @State private var foodboxAddress:String = NSLocalizedString("label_loadingAddress", comment: "") // Combination of multiple parameters here
     
+    @State private var foodboxRegion = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 37.334_900,
+                                       longitude: -122.009_020),
+        latitudinalMeters: 750,
+        longitudinalMeters: 750
+    )
+    
+    
     // View
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("")) {
+                Section() {
                     StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_id", comment: ""), value: "\(foodbox_id)")
                     
                     StaticFoodboxParameterWithClipboard(parameter: NSLocalizedString("foodbox_address", comment: ""), value: foodboxAddress)
                     
-                    // Parameter which are currently unable to get...
-                    //                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_hostingType", comment: ""), value: "\(foodbox_kind_hosting ?? NSLocalizedString("label_missingFeature", comment: ""))")
-                    //
-                    //                    StaticFoodboxParameter(parameter: NSLocalizedString("foodbox_lastActivity", comment: ""), value: "\(foodbox_lastActivity ?? NSLocalizedString("label_missingFeature", comment: ""))")
+                    Map(coordinateRegion: $foodboxRegion)
+                        .frame(height: 200)
+                        .disabled(true)
                 }
                 
                 Section(header: Text(NSLocalizedString("foodbox_header_description", comment: ""))) {
@@ -75,6 +83,13 @@ struct FoodboxDetailView: View {
             DispatchQueue.global(qos: .default).async {
                 foodbox_description = foodboxDataScraper.getFoodboxDescription(foodboxID: foodbox_id)
                 calculateAddressfromLatAndLong()
+                
+                foodboxRegion = MKCoordinateRegion(
+                    center: CLLocationCoordinate2D(latitude: foodbox_latitude,
+                                                   longitude: foodbox_longitude),
+                    latitudinalMeters: 750,
+                    longitudinalMeters: 750
+                )
             }
         }
         .actionSheet(isPresented: $showingNavigationActionSheet) {
@@ -135,9 +150,8 @@ struct FoodboxDetailView: View {
 
 
 
-//struct FoodboxDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FoodboxDetailView(foodbox_id: <#T##Int#>, foodbox_latitude: <#T##Double#>, foodbox_longitude: <#T##Double#>, foodbox_streetname: <#T##String?#>, foodbox_streetnumber: <#T##String?#>, foodbox_postcode: <#T##Int?#>, foodbox_cityname: <#T##String?#>, foodbox_country: <#T##String?#>, foodbox_kind_hosting: <#T##String?#>, foodbox_description: <#T##String?#>)
-//    }
-//}
-
+struct FoodboxDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        FoodboxDetailView(foodbox_id: 324, foodbox_latitude: 51.22250, foodbox_longitude: 6.77270)
+    }
+}

@@ -1,5 +1,12 @@
 <h3>0.8.1</h3>
 <p>
+    (3) Currently under development 🚧
+    <ul>
+        <li>New gear icon for settings</li>
+        <li>Activate the in-app feedback function</li>
+        <li>You need to provide a non-empty Strings to send the in-app feedback</li>
+        <li>A map in the foodboxDetailView to provide a visual reference for the position of the Foodbox</li>
+    </ul>
     (2) Released on 27.11.2021
     <ul>
         <li>A button next to the used libraries to get more information</li>

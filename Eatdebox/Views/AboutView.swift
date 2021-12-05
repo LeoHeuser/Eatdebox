@@ -68,7 +68,7 @@ struct AboutView: View {
             }
             Section(header: Text(NSLocalizedString("button_legals", comment: ""))) {
                 Link(NSLocalizedString("button_imprint", comment: ""), destination: URL(string: "https://eatdebox.eu/imprint/")!)
-                Link(NSLocalizedString("button_dataPrivacy", comment: ""), destination: URL(string: "https://eatdebox.eu/data-privacy/")!)
+                Link(NSLocalizedString("button_dataPrivacy", comment: ""), destination: URL(string: "https://eatdebox.eu/app-data-privacy")!)
                 NavigationLink(destination: AcknowledgementView()) {
                     Text(NSLocalizedString("label_acknowledgements", comment: ""))
                 }

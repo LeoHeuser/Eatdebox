@@ -14,7 +14,7 @@
 "button_close" = "Schließen";
 
 /* (No Comment) */
-"button_dataPrivacy" = "Datenschutz";
+"button_dataPrivacy" = "App Datenschutz";
 
 /* (No Comment) */
 "button_downloadFoodboxes" = "Neueste Foodboxen herunterladen";
@@ -89,13 +89,13 @@
 "madeWithLove" = "Entwickelt mit ❤️ gegen Lebensmittelverschwendung in der Version ";
 
 /* (No Comment) */
-"onboaring1_header" = "Das ist Eatdebox.";
+"onboaring1_header" = "Hey, schön dich zu sehen.";
 
 /* (No Comment) */
 "onboaring1_text" = "Finde kostenlose Lebensmittel in deiner Gegend, um sie vor dem Mülleimer zu retten und spare dabei Geld. Foodboxen, in denen du dein Essen mit anderen teilen und bei Bedarf mitnehmen kannst.";
 
 /* (No Comment) */
-"onboaring2_header" = "Finde Foodboxen in deiner Gegend";
+"onboaring2_header" = "Finde Foodboxen in deiner Gegend.";
 
 /* (No Comment) */
 "onboaring2_text" = "Eatdebox möchte den Standort deines iPhones nutzen, während du die App verwendest. Dein Standort hilft dabei, Foodboxen in deiner Nähe anzuzeigen.";

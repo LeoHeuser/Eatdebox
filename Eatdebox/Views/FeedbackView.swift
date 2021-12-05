@@ -35,7 +35,7 @@ struct FeedbackView: View {
                     
                     Section(header: Text(NSLocalizedString("header_kindOfFeedback", comment: ""))) {
                         Picker("kindOfFeedback", selection: $kindOfFeedback) {
-                            Text(NSLocalizedString("pickerTag_error", comment: "")).tag("bug")
+                            Text(NSLocalizedString("pickerTag_error", comment: "")).tag("error")
                             Text(NSLocalizedString("pickerTag_idea", comment: "")).tag("idea")
                             Text(NSLocalizedString("pickerTag_other", comment: "")).tag("other")
                         }
@@ -55,14 +55,14 @@ struct FeedbackView: View {
                             }
                     }
                     
-                    Button("label_comingSoon") {
+                    Button("button_sendFeedback") {
                         writeFeedbackInDatabase(email_address: userEmail, category: kindOfFeedback, feedback: feedbackText)
                         
                         // Lokales (!) Speichern der E-Mail Adresse des Users für das nächste Feedback.
                         userEmailAddress = userEmail
                         
                         // Leeren der Textfelder
-                        userEmail = ""
+                        userEmail = userEmailAddress ?? ""
                         kindOfFeedback = ""
                         feedbackText = ""
                     }
@@ -73,15 +73,34 @@ struct FeedbackView: View {
                     //                    }
                     //                    .disabled(sendFeedbackButtonDisabled)
                 }
+                .onChange(of: [userEmail, kindOfFeedback, feedbackText]){ newValue in
+                    // Maybe change this to a better performing function.
+                    checkTextInput()
+                    
+                }
                 .navigationBarTitle(NSLocalizedString("label_provideFeedback", comment: ""), displayMode: .inline)
             }
         }
     }
     
+    func checkTextInput() {
+        if !(userEmail.isValidEmail) || kindOfFeedback.isEmpty || feedbackText.isEmpty {
+            sendFeedbackButtonDisabled = true
+        } else {
+            sendFeedbackButtonDisabled = false
+        }
+    }
     
     struct FeedbackView_Previews: PreviewProvider {
         static var previews: some View {
             FeedbackView()
         }
+    }
+}
+
+// Input by https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift
+extension String {
+    var isValidEmail: Bool {
+        NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,10}").evaluate(with: self)
     }
 }
