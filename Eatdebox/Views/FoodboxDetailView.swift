@@ -35,11 +35,7 @@ struct FoodboxDetailView: View {
     @State private var foodboxAddress:String = NSLocalizedString("label_loadingAddress", comment: "") // Combination of multiple parameters here
     
     @State private var foodboxRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 37.334_900,
-                                       longitude: -122.009_020),
-        latitudinalMeters: 750,
-        longitudinalMeters: 750
-    )
+        center: CLLocationCoordinate2D(latitude: 51.383636, longitude: 10.379746), latitudinalMeters: 100000, longitudinalMeters: 100000)
     
     
     // View
@@ -87,8 +83,8 @@ struct FoodboxDetailView: View {
                 foodboxRegion = MKCoordinateRegion(
                     center: CLLocationCoordinate2D(latitude: foodbox_latitude,
                                                    longitude: foodbox_longitude),
-                    latitudinalMeters: 750,
-                    longitudinalMeters: 750
+                    latitudinalMeters: 500,
+                    longitudinalMeters: 500
                 )
             }
         }
